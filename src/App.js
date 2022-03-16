@@ -14,20 +14,20 @@ import FormControl from 'react-bootstrap/FormControl';
 function App() {
   return (
     <div id=''>
-      {/* <header>Timon pelivärkit </header> */}
-    {/*   <Navbar bg="dark" expand="lg">
+      <Navbar bg="dark" expand="lg">
         <Container fluid>
           <Navbar.Brand href="<App />"> <img src='../Gaming Gadgets.png' className='logo' alt='logo'></img></Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav
-              className="me-auto_my-2_my-lg-0"
-              style={{ maxHeight: '150px' }}
+              className="me-auto my-2 my-lg-0"
+              style={{ maxHeight: '100px' }}
               navbarScroll
             >
+
               <Nav.Link href="#action2" id='link'>Link1</Nav.Link>
               <Nav.Link href="#" id='link'>Link2</Nav.Link>
-              <NavDropdown title="kategoriat" id="navbarScrollingDropdown">
+              <NavDropdown title="Categories" id="navbarScrollingDropdown">
                 <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
                 <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
                 <NavDropdown.Divider />
@@ -47,42 +47,7 @@ function App() {
             </Form>
           </Navbar.Collapse>
         </Container>
-      </Navbar> */}
-
-<Navbar bg="dark" expand="lg">
-  <Container fluid>
-  <Navbar.Brand href="<App />"> <img src='../Gaming Gadgets.png' className='logo' alt='logo'></img></Navbar.Brand>
-    <Navbar.Toggle aria-controls="navbarScroll" />
-    <Navbar.Collapse id="navbarScroll">
-      <Nav
-        className="me-auto my-2 my-lg-0"
-        style={{ maxHeight: '100px' }}
-        navbarScroll
-      >
-        
-        <Nav.Link href="#action2" id='link'>Link1</Nav.Link>
-        <Nav.Link href="#" id='link'>Link2</Nav.Link>
-        <NavDropdown title="Categories" id="navbarScrollingDropdown">
-          <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-          <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
-          <NavDropdown.Divider />
-          <NavDropdown.Item href="#action5">
-            Something else here
-          </NavDropdown.Item>
-        </NavDropdown>
-      </Nav>
-      <Form className="d-flex">
-        <FormControl
-          type="search"
-          placeholder="Search"
-          className="me-2"
-          aria-label="Search"
-        />
-        <Button variant="outline-success">Search</Button>
-      </Form>
-    </Navbar.Collapse>
-  </Container>
-</Navbar>
+      </Navbar>
       <div>Tänne niitä hiiriä ja hiirimattoja kiitos</div>
       <div>
         <p>tässä ois 1</p>
@@ -97,7 +62,7 @@ function App() {
             <Button variant="primary">Katso tarkemmin</Button>
           </Card.Body>
         </Card>
-      
+
       </div>
       <footer>&copy; Tiimi 10</footer>
     </div>
