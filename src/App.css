@@ -16,7 +16,8 @@ body {
   color: white;
 }
 div h3 {
-  margin-top: 5px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   text-align: center;
 }
 #cards {

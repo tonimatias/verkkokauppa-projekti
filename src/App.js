@@ -25,8 +25,8 @@ function App() {
               navbarScroll
             >
 
-              <Nav.Link href="#action2" id='link'>Link1</Nav.Link>
-              <Nav.Link href="#" id='link'>Link2</Nav.Link>
+              <Nav.Link href="#action2" id='link'>Etusivu</Nav.Link>
+              <Nav.Link href="#" id='link'>Yhteystiedot</Nav.Link>
               <NavDropdown title="Kategoriat" id="navbarScrollingDropdown">
                 <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
                 <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
@@ -63,19 +63,19 @@ function App() {
         <Card style={{ width: '18rem' }}>
           <Card.Img variant="top" src="../hiiri.jpg" />
           <Card.Body>
-            <Card.Title>Hiiri 1</Card.Title>
+            <Card.Title>Hiiri 2</Card.Title>
             <Card.Text>
-              Älyttömän hyvä hiiri kaikkeen maholliseen näpyttelyyn!
+              Budjetti luokan hiiri.
             </Card.Text>
             <Button variant="primary">Katso tarkemmin</Button>
           </Card.Body>
         </Card>
         <Card style={{ width: '18rem' }}>
-          <Card.Img variant="top" src="../hiiri.jpg" />
+          <Card.Img variant="top" src="../keyboard1.jpg" />
           <Card.Body>
-            <Card.Title>Hiiri 1</Card.Title>
+            <Card.Title>Näppäimistö</Card.Title>
             <Card.Text>
-              Älyttömän hyvä hiiri kaikkeen maholliseen näpyttelyyn!
+              Maailman paras peli näppis!
             </Card.Text>
             <Button variant="primary">Katso tarkemmin</Button>
           </Card.Body>
