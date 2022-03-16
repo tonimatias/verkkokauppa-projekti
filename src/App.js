@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from 'react-bootstrap/Button';
@@ -23,7 +22,7 @@ function App() {
             <Button variant="primary">Katso tarkemmin</Button>
           </Card.Body>
         </Card>
-
+      
       </div>
       <footer>&copy; Tiimi 10</footer>
     </div>
