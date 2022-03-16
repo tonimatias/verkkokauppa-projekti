@@ -22,13 +22,11 @@ function App() {
           <Navbar.Collapse id="navbarScroll">
             <Nav
               className="me-auto_my-2_my-lg-0"
-              style={{ maxHeight: '100px' }}
+              style={{ maxHeight: '150px' }}
               navbarScroll
             >
               <Nav.Link href="#action2" id='link'>Link1</Nav.Link>
-              <Nav.Link href="#" id='link'>
-                Link2
-              </Nav.Link>
+              <Nav.Link href="#" id='link'>Link2</Nav.Link>
               <NavDropdown title="kategoriat" id="navbarScrollingDropdown">
                 <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
                 <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
