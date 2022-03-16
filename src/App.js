@@ -21,13 +21,13 @@ function App() {
           <Navbar.Collapse id="navbarScroll">
             <Nav
               className="me-auto my-2 my-lg-0"
-              style={{ maxHeight: '100px' }}
+              style={{ maxHeight: '200px' }}
               navbarScroll
             >
 
               <Nav.Link href="#action2" id='link'>Link1</Nav.Link>
               <Nav.Link href="#" id='link'>Link2</Nav.Link>
-              <NavDropdown title="Categories" id="navbarScrollingDropdown">
+              <NavDropdown title="Kategoriat" id="navbarScrollingDropdown">
                 <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
                 <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
                 <NavDropdown.Divider />
@@ -39,11 +39,11 @@ function App() {
             <Form className="d-flex">
               <FormControl
                 type="search"
-                placeholder="Search"
+                placeholder="Hae tuotteita"
                 className="me-2"
                 aria-label="Search"
               />
-              <Button variant="outline-success">Search</Button>
+              <Button variant="outline-success">Haku</Button>
             </Form>
           </Navbar.Collapse>
         </Container>
