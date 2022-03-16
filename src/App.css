@@ -1,9 +1,23 @@
-header {
-  background-color: aquamarine;
-  text-align: center;
-  font-size: 2em;
+.logo {
+  height: 80px;
+  border-radius: 5px;
+  transition: transform 0.3s;
 }
 
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.me-auto_my-2_my-lg-0 {
+  color: white;
+}
+
+#link {
+  color: white;
+}
+#navbarScrollingDropdown {
+  color: white;
+}
 
 footer {
   position: absolute;
@@ -11,3 +25,8 @@ footer {
   text-align: center;
   width: 100%;
 }
+
+form button {
+  color: white;
+}
+

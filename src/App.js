@@ -15,19 +15,21 @@ function App() {
   return (
     <div id=''>
       {/* <header>Timon pelivärkit </header> */}
-      <Navbar bg="light" expand="lg">
+      <Navbar bg="dark" expand="lg">
         <Container fluid>
-          <Navbar.Brand href=""> <img src='../Gaming Gadgets 2.png'></img></Navbar.Brand>
+          <Navbar.Brand href="<App />"> <img src='../Gaming Gadgets.png' className='logo' alt='logo'></img></Navbar.Brand>
           <Navbar.Toggle aria-controls="navbarScroll" />
           <Navbar.Collapse id="navbarScroll">
             <Nav
-              className="me-auto my-2 my-lg-0"
+              className="me-auto_my-2_my-lg-0"
               style={{ maxHeight: '100px' }}
               navbarScroll
             >
-              <Nav.Link href="#action1">Home</Nav.Link>
-              <Nav.Link href="#action2">Link</Nav.Link>
-              <NavDropdown title="Link" id="navbarScrollingDropdown">
+              <Nav.Link href="#action2" id='link'>Link1</Nav.Link>
+              <Nav.Link href="#" id='link'>
+                Link2
+              </Nav.Link>
+              <NavDropdown title="kategoriat" id="navbarScrollingDropdown">
                 <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
                 <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
                 <NavDropdown.Divider />
@@ -35,9 +37,6 @@ function App() {
                   Something else here
                 </NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link href="#" disabled>
-                Link
-              </Nav.Link>
             </Nav>
             <Form className="d-flex">
               <FormControl
