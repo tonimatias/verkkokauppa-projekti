@@ -77,6 +77,17 @@ function App() {
             <Button variant="primary">Katso tarkemmin</Button>
           </Card.Body>
         </Card>
+
+        <Card style={{ width: '18rem' }}>
+          <Card.Img variant="top" src="../keyboard1.jpg" />
+          <Card.Body>
+            <Card.Title>Näppäimistö2</Card.Title>
+            <Card.Text>
+              Maailman 2.  paras peli näppis!
+            </Card.Text>
+            <Button variant="primary">Katso tarkemmin</Button>
+          </Card.Body>
+        </Card>
       
       </div>
       <footer>&copy; Tiimi 10</footer>
