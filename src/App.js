@@ -21,13 +21,13 @@ function App() {
           <Navbar.Collapse id="navbarScroll">
             <Nav
               className="me-auto my-2 my-lg-0"
-              style={{ maxHeight: '100px' }}
+              style={{ maxHeight: '200px' }}
               navbarScroll
             >
 
-              <Nav.Link href="#action2" id='link'>Link1</Nav.Link>
-              <Nav.Link href="#" id='link'>Link2</Nav.Link>
-              <NavDropdown title="Categories" id="navbarScrollingDropdown">
+              <Nav.Link href="#action2" id='link'>Etusivu</Nav.Link>
+              <Nav.Link href="#" id='link'>Yhteystiedot</Nav.Link>
+              <NavDropdown title="Kategoriat" id="navbarScrollingDropdown">
                 <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
                 <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
                 <NavDropdown.Divider />
@@ -39,11 +39,11 @@ function App() {
             <Form className="d-flex">
               <FormControl
                 type="search"
-                placeholder="Search"
+                placeholder="Hae tuotteita"
                 className="me-2"
                 aria-label="Search"
               />
-              <Button variant="outline-success">Search</Button>
+              <Button variant="outline-success">Haku</Button>
             </Form>
           </Navbar.Collapse>
         </Container>
@@ -63,19 +63,19 @@ function App() {
         <Card style={{ width: '18rem' }}>
           <Card.Img variant="top" src="../hiiri.jpg" />
           <Card.Body>
-            <Card.Title>Hiiri 1</Card.Title>
+            <Card.Title>Hiiri 2</Card.Title>
             <Card.Text>
-              Älyttömän hyvä hiiri kaikkeen maholliseen näpyttelyyn!
+              Budjetti luokan hiiri.
             </Card.Text>
             <Button variant="primary">Katso tarkemmin</Button>
           </Card.Body>
         </Card>
         <Card style={{ width: '18rem' }}>
-          <Card.Img variant="top" src="../hiiri.jpg" />
+          <Card.Img variant="top" src="../keyboard1.jpg" />
           <Card.Body>
-            <Card.Title>Hiiri 1</Card.Title>
+            <Card.Title>Näppäimistö</Card.Title>
             <Card.Text>
-              Älyttömän hyvä hiiri kaikkeen maholliseen näpyttelyyn!
+              Maailman paras peli näppis!
             </Card.Text>
             <Button variant="primary">Katso tarkemmin</Button>
           </Card.Body>

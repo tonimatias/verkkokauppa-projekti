@@ -1,5 +1,6 @@
 body {
-  height: 100%;
+  height: 100vh;
+  margin-bottom: 20px;
 }
 .logo {
   height: 80px;
@@ -15,7 +16,8 @@ body {
   color: white;
 }
 div h3 {
-  margin-top: 5px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   text-align: center;
 }
 #cards {
@@ -33,10 +35,14 @@ div h3 {
 }
 
 footer{
+  color: white;
   position: absolute;
   bottom: 0;
   text-align: center;
   width: 100%;
+  background-color: rgb(41, 43, 44);
+  padding: 20px;
+  margin-top: 20px;
 }
 
 form button {
