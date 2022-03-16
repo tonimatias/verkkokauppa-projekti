@@ -83,10 +83,29 @@ function App() {
     </Navbar.Collapse>
   </Container>
 </Navbar>
-      <div>Tänne niitä hiiriä ja hiirimattoja kiitos</div>
-      <div>
-        <p>tässä ois 1</p>
+      <div><h3>Suosituimmat tuotteet</h3></div>
+      <div id='cards'>
 
+        <Card style={{ width: '18rem' }}>
+          <Card.Img variant="top" src="../hiiri.jpg" />
+          <Card.Body>
+            <Card.Title>Hiiri 1</Card.Title>
+            <Card.Text>
+              Älyttömän hyvä hiiri kaikkeen maholliseen näpyttelyyn!
+            </Card.Text>
+            <Button variant="primary">Katso tarkemmin</Button>
+          </Card.Body>
+        </Card>
+        <Card style={{ width: '18rem' }}>
+          <Card.Img variant="top" src="../hiiri.jpg" />
+          <Card.Body>
+            <Card.Title>Hiiri 1</Card.Title>
+            <Card.Text>
+              Älyttömän hyvä hiiri kaikkeen maholliseen näpyttelyyn!
+            </Card.Text>
+            <Button variant="primary">Katso tarkemmin</Button>
+          </Card.Body>
+        </Card>
         <Card style={{ width: '18rem' }}>
           <Card.Img variant="top" src="../hiiri.jpg" />
           <Card.Body>
