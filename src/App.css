@@ -21,10 +21,28 @@ div h3 {
   text-align: center;
 }
 #cards {
+  padding-left: 5em;
+  padding-right: 5em;
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+
+.shoppingcartIcon {
+  height: 25px;
+  width: 25px;
+}
+
+.shoppingcartIcon:hover {
+  animation: pulse 1s infinite;
+  animation-timing-function: linear; 
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1)};
+  100% { transform: scale(1); }
+  }
 
 
 #link {

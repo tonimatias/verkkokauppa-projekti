@@ -26,7 +26,7 @@ function App() {
             >
 
               <Nav.Link href="#action2" id='link'>Etusivu</Nav.Link>
-              <Nav.Link href="#" id='link'>Yhteystiedot</Nav.Link>
+              <Nav.Link href="#" id='link'>Ostoskori</Nav.Link>
               <NavDropdown title="Kategoriat" id="navbarScrollingDropdown">
                 <NavDropdown.Item href="< />">Hiiret</NavDropdown.Item>
                 <NavDropdown.Item href="< />">Näppäimistöt</NavDropdown.Item>
@@ -52,7 +52,8 @@ function App() {
           <Card.Body>
             <Card.Title>Hiiri 1</Card.Title>
             <Card.Text>
-              Älyttömän hyvä hiiri kaikkeen maholliseen näpyttelyyn!
+              Älyttömän hyvä hiiri kaikkeen maholliseen näpyttelyyn!<br></br>
+              <img className='shoppingcartIcon' src='../buy.png' title='Lisää ostoskoriin'></img>
             </Card.Text>
             <Button variant="primary">Katso tarkemmin</Button>
           </Card.Body>
@@ -62,7 +63,8 @@ function App() {
           <Card.Body>
             <Card.Title>Hiiri 2</Card.Title>
             <Card.Text>
-              Budjetti luokan hiiri.
+              Budjetti luokan hiiri. Ajaa asiansa välillä.<br></br>
+              <img className='shoppingcartIcon' src='../buy.png' title='Lisää ostoskoriin'></img>
             </Card.Text>
             <Button variant="primary">Katso tarkemmin</Button>
           </Card.Body>
@@ -72,7 +74,8 @@ function App() {
           <Card.Body>
             <Card.Title>Näppäimistö</Card.Title>
             <Card.Text>
-              Maailman paras peli näppis!
+              Maailman paras peli näppis! Et tule löytämään parempaa!<br></br>
+              <img className='shoppingcartIcon' src='../buy.png' title='Lisää ostoskoriin'></img>
             </Card.Text>
             <Button variant="primary">Katso tarkemmin</Button>
           </Card.Body>
@@ -83,12 +86,12 @@ function App() {
           <Card.Body>
             <Card.Title>Näppäimistö2</Card.Title>
             <Card.Text>
-              Maailman 2.  paras peli näppis!
+              Maailman 2.  paras peli näppis! Hyvä se on, muttei paras. <br></br>
+              <img className='shoppingcartIcon' src='../buy.png' title='Lisää ostoskoriin'></img>
             </Card.Text>
             <Button variant="primary">Katso tarkemmin</Button>
           </Card.Body>
         </Card>
-      
       </div>
       <footer>&copy; Tiimi 10</footer>
     </div>
