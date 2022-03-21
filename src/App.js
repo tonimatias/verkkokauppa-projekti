@@ -50,6 +50,7 @@ function App() {
       <section id='content'>
       <h3>tarjoukset</h3>
 
+
       <Carousel id='carousel' variant='dark'>
   <Carousel.Item>
     <img
