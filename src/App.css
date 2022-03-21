@@ -74,9 +74,27 @@ form button {
   color: white;
 }
 
-/*.d-flex {
-  position: relative;
-  padding-left: 60%;
-  margin: 0px;
-}*/
+@media screen and (max-width: 1233px){
+  #cards {
+    padding-left: 5em;
+    padding-right: 5em;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 
+}
+
+@media screen and (max-width: 670px){
+  #cards {
+    padding: auto;
+    width: 100%;
+    display: inline-block;
+    grid-template-columns: 1fr;
+  }
+
+  #content{
+    align-content: space-around;
+  }
+
+}
