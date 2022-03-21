@@ -13,7 +13,7 @@ import FormControl from 'react-bootstrap/FormControl';
 
 function App() {
   return (
-    <div id=''>
+    <div id='body'>
       <Navbar bg="dark" expand="lg">
         <Container fluid>
           <Navbar.Brand href="<App />"> <img src='../Gaming Gadgets.png' className='logo' alt='logo'></img></Navbar.Brand>
@@ -45,6 +45,8 @@ function App() {
           </Navbar.Collapse>
         </Container>
       </Navbar>
+
+      <section id='content'>
       <div><h3>Suosituimmat tuotteet</h3></div>
       <div id='cards'>
         <Card style={{ width: '18rem' }}>
@@ -93,7 +95,14 @@ function App() {
           </Card.Body>
         </Card>
       </div>
+
+      </section>
+
+      <div>
       <footer>&copy; Tiimi 10</footer>
+      </div>
+
+      
     </div>
   );
 }
