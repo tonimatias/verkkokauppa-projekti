@@ -26,7 +26,7 @@ function App() {
               navbarScroll
             >
 
-              <Nav.Link href="#action2" id='link'>Etusivu</Nav.Link>
+              {/* <Nav.Link href="#action2" id='link'>Etusivu</Nav.Link> */}
               <Nav.Link href="#" id='link'>Ostoskori</Nav.Link>
               <NavDropdown title="Kategoriat" id="navbarScrollingDropdown">
                 <NavDropdown.Item href="< />">Hiiret</NavDropdown.Item>
