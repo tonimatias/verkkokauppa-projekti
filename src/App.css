@@ -33,6 +33,10 @@ div h3 {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+#kuva {
+  height: 200px;
+}
+
 .shoppingcartIcon {
   height: 25px;
   width: 25px;

@@ -50,7 +50,7 @@ function App() {
       <div><h3>Suosituimmat tuotteet</h3></div>
       <div id='cards'>
         <Card style={{ width: '18rem' }}>
-          <Card.Img variant="top" src="../hiiri.jpg" />
+          <Card.Img variant="top" id='kuva' src="../hiiri.jpg" />
           <Card.Body>
             <Card.Title>Hiiri 1</Card.Title>
             <Card.Text>
@@ -61,7 +61,7 @@ function App() {
           </Card.Body>
         </Card>
         <Card style={{ width: '18rem' }}>
-          <Card.Img variant="top" src="../hiiri.jpg" />
+          <Card.Img variant="top" id='kuva' src="../hiiri.jpg" />
           <Card.Body>
             <Card.Title>Hiiri 2</Card.Title>
             <Card.Text>
@@ -72,7 +72,7 @@ function App() {
           </Card.Body>
         </Card>
         <Card style={{ width: '18rem' }}>
-          <Card.Img variant="top" src="../keyboard1.jpg" />
+          <Card.Img variant="top" id='kuva' src="../keyboard1.jpg" />
           <Card.Body>
             <Card.Title>Näppäimistö</Card.Title>
             <Card.Text>
@@ -84,7 +84,7 @@ function App() {
         </Card>
 
         <Card style={{ width: '18rem' }}>
-          <Card.Img variant="top" src="../keyboard1.jpg" />
+          <Card.Img variant="top" id='kuva' src="../keyboard1.jpg" />
           <Card.Body>
             <Card.Title>Näppäimistö2</Card.Title>
             <Card.Text>
