@@ -78,10 +78,14 @@ form button {
   color: white;
 }
 
-#hinta {
+#hinta, #vanha-hinta {
   font-weight: bold;
   color: red;
   /*text-decoration: line-through;*/
+}
+
+#vanha-hinta{
+  text-decoration: line-through;
 }
 
 .carousel img{

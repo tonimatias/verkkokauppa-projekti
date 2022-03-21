@@ -59,8 +59,9 @@ function App() {
       alt="First slide"
     />
     <Carousel.Caption>
-      <h3>First slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      <h3>Hiiri 1</h3>
+      <p>iha saatanan hyvä hiiri</p>
+      <div id='hinta'><span id='vanha-hinta'>5,95</span> 4,95</div>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
