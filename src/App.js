@@ -8,6 +8,7 @@ import Container from 'react-bootstrap/Container';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Form from 'react-bootstrap/Form';
 import FormControl from 'react-bootstrap/FormControl';
+import Carousel from 'react-bootstrap/Carousel';
 
 
 
@@ -47,9 +48,47 @@ function App() {
       </Navbar>
 
       <section id='content'>
-      <div><h3>Suosituimmat tuotteet</h3></div>
+      <h3>tarjoukset</h3>
 
-      
+      <Carousel id='carousel' variant='dark'>
+  <Carousel.Item>
+    <img
+      className="d-block w-50"
+      src="../hiiri.jpg"
+      alt="First slide"
+    />
+    <Carousel.Caption>
+      <h3>First slide label</h3>
+      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-50"
+      src="../hiiri.jpg"
+      alt="Second slide"
+    />
+
+    <Carousel.Caption>
+      <h3>Second slide label</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item>
+    <img
+      className="d-block w-50"
+      src="../keyboard1.jpg"
+      alt="Third slide"
+    />
+
+    <Carousel.Caption>
+      <h3>Third slide label</h3>
+      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+</Carousel>
+
+<div><h3>Suosituimmat tuotteet</h3></div>
 
       <div id='cards'>
         <Card style={{ width: '18rem' }}>

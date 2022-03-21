@@ -84,6 +84,12 @@ form button {
   /*text-decoration: line-through;*/
 }
 
+.carousel img{
+  width: 50%;
+  margin: auto;
+  height: 500px;
+}
+
 @media screen and (max-width: 1233px){
   #cards {
     padding-left: 5em;
