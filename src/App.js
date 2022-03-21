@@ -55,9 +55,9 @@ function App() {
             <Card.Title>Hiiri 1</Card.Title>
             <Card.Text>
               Älyttömän hyvä hiiri kaikkeen maholliseen näpyttelyyn!<br></br>
-              <img className='shoppingcartIcon' src='../buy.png' title='Lisää ostoskoriin'></img>
+              <div id='hinta'>59,95</div>
             </Card.Text>
-            <Button variant="primary">Katso tarkemmin</Button>
+            <Button variant="primary"><img className='shoppingcartIcon' src='../buy.png' title='Lisää ostoskoriin'></img></Button>
           </Card.Body>
         </Card>
         <Card style={{ width: '18rem' }}>
@@ -66,9 +66,9 @@ function App() {
             <Card.Title>Hiiri 2</Card.Title>
             <Card.Text>
               Budjetti luokan hiiri. Ajaa asiansa välillä.<br></br>
-              <img className='shoppingcartIcon' src='../buy.png' title='Lisää ostoskoriin'></img>
+              <div id='hinta'>5,95</div>
             </Card.Text>
-            <Button variant="primary">Katso tarkemmin</Button>
+            <Button variant="primary"><img className='shoppingcartIcon' src='../buy.png' title='Lisää ostoskoriin'></img></Button>
           </Card.Body>
         </Card>
         <Card style={{ width: '18rem' }}>
@@ -77,9 +77,9 @@ function App() {
             <Card.Title>Näppäimistö</Card.Title>
             <Card.Text>
               Maailman paras peli näppis! Et tule löytämään parempaa!<br></br>
-              <img className='shoppingcartIcon' src='../buy.png' title='Lisää ostoskoriin'></img>
+              <div id='hinta'>119,95</div>
             </Card.Text>
-            <Button variant="primary">Katso tarkemmin</Button>
+            <Button variant="primary"><img className='shoppingcartIcon' src='../buy.png' title='Lisää ostoskoriin'></img></Button>
           </Card.Body>
         </Card>
 
@@ -89,9 +89,9 @@ function App() {
             <Card.Title>Näppäimistö2</Card.Title>
             <Card.Text>
               Maailman 2.  paras peli näppis! Hyvä se on, muttei paras. <br></br>
-              <img className='shoppingcartIcon' src='../buy.png' title='Lisää ostoskoriin'></img>
+              <div id='hinta'>79,90</div>
             </Card.Text>
-            <Button variant="primary">Katso tarkemmin</Button>
+            <Button variant="primary"><img className='shoppingcartIcon' src='../buy.png' title='Lisää ostoskoriin'></img></Button>
           </Card.Body>
         </Card>
       </div>

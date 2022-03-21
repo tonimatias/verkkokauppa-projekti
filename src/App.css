@@ -78,6 +78,11 @@ form button {
   color: white;
 }
 
+#hinta {
+  font-weight: bold;
+  color: red;
+}
+
 @media screen and (max-width: 1233px){
   #cards {
     padding-left: 5em;
