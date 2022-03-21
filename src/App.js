@@ -99,7 +99,7 @@ function App() {
       </section>
 
       <div>
-      <footer>&copy; Tiimi 10</footer>
+      <footer>&copy; Ryhmä 10</footer>
       </div>
 
       
