@@ -48,7 +48,7 @@ function App() {
       </Navbar>
 
       <section id='content'>
-      <h3>tarjoukset</h3>
+      <h3>Tarjoukset</h3>
 
 
       <Carousel id='carousel' variant='dark'>
