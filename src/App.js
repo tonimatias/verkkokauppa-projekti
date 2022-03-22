@@ -67,7 +67,7 @@ function App() {
               Älyttömän hyvä hiiri kaikkeen maholliseen näpyttelyyn!<br></br>
               <div id='hinta'>59,95</div>
             </Card.Text>
-            <Button variant="primary"><img className='shoppingcartIcon' src='../cart.png' title='Lisää ostoskoriin'></img></Button>
+            <Button variant="primary"><img className='shoppingcartIcon' src='../cart.png' title='Lisää ostoskoriin' alt='hiiri1'></img></Button>
           </Card.Body>
         </Card>
         <Card style={{ width: '18rem' }}>
@@ -78,7 +78,7 @@ function App() {
               Budjetti luokan hiiri. Ajaa asiansa välillä.<br></br>
               <div id='hinta'>5,95</div>
             </Card.Text>
-            <Button variant="primary"><img className='shoppingcartIcon' src='../cart.png' title='Lisää ostoskoriin'></img></Button>
+            <Button variant="primary"><img className='shoppingcartIcon' src='../cart.png' title='Lisää ostoskoriin' alt='hiiri2'></img></Button>
           </Card.Body>
         </Card>
         <Card style={{ width: '18rem' }}>
@@ -89,7 +89,7 @@ function App() {
               Maailman paras peli näppis! Et tule löytämään parempaa!<br></br>
               <div id='hinta'>119,95</div>
             </Card.Text>
-            <Button variant="primary"><img className='shoppingcartIcon' src='../cart.png' title='Lisää ostoskoriin'></img></Button>
+            <Button variant="primary"><img className='shoppingcartIcon' src='../cart.png' title='Lisää ostoskoriin'alt='näppäimistö1' ></img></Button>
           </Card.Body>
         </Card>
 
@@ -101,7 +101,7 @@ function App() {
               Maailman 2.  paras peli näppis! Hyvä se on, muttei paras. <br></br>
               <div id='hinta'>79,90</div>
             </Card.Text>
-            <Button variant="primary"><img className='shoppingcartIcon' src='../cart.png' title='Lisää ostoskoriin'></img></Button>
+            <Button variant="primary"><img className='shoppingcartIcon' src='../cart.png' title='Lisää ostoskoriin' alt='näppäimistö2'></img></Button>
           </Card.Body>
         </Card>
       </div>
