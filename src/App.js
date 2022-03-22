@@ -26,7 +26,7 @@ function App() {
               navbarScroll
             >
 
-              <Nav.Link href="#action2" id='link'>Etusivu</Nav.Link>
+              {/* <Nav.Link href="#action2" id='link'>Etusivu</Nav.Link> */}
               <Nav.Link href="#" id='link'>Ostoskori</Nav.Link>
               <NavDropdown title="Kategoriat" id="navbarScrollingDropdown">
                 <NavDropdown.Item href="< />">Hiiret</NavDropdown.Item>
@@ -48,7 +48,8 @@ function App() {
       </Navbar>
 
       <section id='content'>
-      <h3>tarjoukset</h3>
+      <h3>Tarjoukset</h3>
+
 
       <Carousel id='carousel' variant='dark'>
   <Carousel.Item>
@@ -58,8 +59,9 @@ function App() {
       alt="First slide"
     />
     <Carousel.Caption>
-      <h3>First slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      <h3>Hiiri 1</h3>
+      <p>iha saatanan hyvä hiiri</p>
+      <div id='hinta'><span id='vanha-hinta'>5,95</span> 4,95</div>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
