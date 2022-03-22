@@ -36,8 +36,8 @@ function App() {
     />
 
     <Carousel.Caption>
-      <h3>Second slide label</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <h3>hiiri2</h3>
+      <p>sdfsdgjsdf</p>
       <div id='hinta'><span id='vanha-hinta'>5,95</span> 4,95</div>
     </Carousel.Caption>
   </Carousel.Item>
@@ -49,9 +49,9 @@ function App() {
     />
 
     <Carousel.Caption>
-      <h3>Third slide label</h3>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-      <div id='hinta'><span id='vanha-hinta'>139,90</span> 119,90</div>
+      <h3>Näppäimistö</h3>
+      <p>edfghds</p>
+      <div id='hinta'><span id='vanha-hinta'>139,95</span> 119,95</div>
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>
