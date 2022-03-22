@@ -62,7 +62,7 @@ div h3 {
 }
 
 footer{
-  height: 50px;
+  /* height: 50px; */
   color: white;
   position: absolute;
   bottom: 0;
@@ -91,7 +91,7 @@ form button {
 .carousel img{
   width: 50%;
   margin: auto;
-  height: 500px;
+  height: auto;
 }
 
 @media screen and (max-width: 1233px){
@@ -102,7 +102,9 @@ form button {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
-
+  .carousel h3, .carousel p {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 670px){

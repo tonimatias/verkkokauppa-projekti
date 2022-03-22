@@ -74,6 +74,7 @@ function App() {
     <Carousel.Caption>
       <h3>Second slide label</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <div id='hinta'><span id='vanha-hinta'>5,95</span> 4,95</div>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>
@@ -86,6 +87,7 @@ function App() {
     <Carousel.Caption>
       <h3>Third slide label</h3>
       <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      <div id='hinta'><span id='vanha-hinta'>139,90</span> 119,90</div>
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>
@@ -143,7 +145,16 @@ function App() {
       </section>
 
       <div>
-      <footer>&copy; Ryhmä 10</footer>
+      <footer>
+        <div>
+        &copy; Ryhmä 10
+        </div>
+      
+      <div>
+        dfsfdgfg
+      </div>
+
+      </footer>
       </div>
 
       
