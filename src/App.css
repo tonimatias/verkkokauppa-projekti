@@ -102,7 +102,7 @@ form button {
 .carousel img{
   width: 50%;
   margin: auto;
-  height: auto;
+  max-height: 500px;
 }
 
 @media screen and (max-width: 1233px){
@@ -123,7 +123,7 @@ form button {
     padding: auto;
     width: 100%;
     display: inline-block;
-    grid-template-columns: 1fr;
+    /* grid-template-columns: 1fr;*/
   }
 
   #content{
