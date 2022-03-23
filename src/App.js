@@ -2,50 +2,14 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import Container from 'react-bootstrap/Container';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import Form from 'react-bootstrap/Form';
-import FormControl from 'react-bootstrap/FormControl';
 import Carousel from 'react-bootstrap/Carousel';
-
-
+import Header from './Header.js'
 
 function App() {
   return (
     <div id='body'>
-      <Navbar bg="dark" expand="lg">
-        <Container fluid>
-          <Navbar.Brand href="<App />"> <img src='../Gaming Gadgets.png' className='logo' alt='logo'></img></Navbar.Brand>
-          <Navbar.Toggle aria-controls="navbarScroll" />
-          <Navbar.Collapse id="navbarScroll">
-            <Nav
-              className="me-auto my-2 my-lg-0"
-              style={{ maxHeight: '200px' }}
-              navbarScroll
-            >
-
-              {/* <Nav.Link href="#action2" id='link'>Etusivu</Nav.Link> */}
-              <Nav.Link href="#" id='link'>Ostoskori</Nav.Link>
-              <NavDropdown title="Kategoriat" id="navbarScrollingDropdown">
-                <NavDropdown.Item href="< />">Hiiret</NavDropdown.Item>
-                <NavDropdown.Item href="< />">Näppäimistöt</NavDropdown.Item>
-                <NavDropdown.Item href="< />">Kuulokkeet</NavDropdown.Item>
-              </NavDropdown>
-            </Nav>
-            <Form className="d-flex">
-              <FormControl
-                type="search"
-                placeholder="Hae tuotteita"
-                className="me-2"
-                aria-label="Search"
-              />
-              <Button variant="outline-success">Haku</Button>
-            </Form>
-          </Navbar.Collapse>
-        </Container>
-      </Navbar>
+      
+    < Header />
 
       <section id='content'>
       <h3>Tarjoukset</h3>
@@ -103,7 +67,7 @@ function App() {
               Älyttömän hyvä hiiri kaikkeen maholliseen näpyttelyyn!<br></br>
               <div id='hinta'>59,95</div>
             </Card.Text>
-            <Button variant="primary"><img className='shoppingcartIcon' src='../cart.png' title='Lisää ostoskoriin'></img></Button>
+            <Button variant="primary"><img className='shoppingcartIcon' src='../cart.png' title='Lisää ostoskoriin' alt='hiiri1'></img></Button>
           </Card.Body>
         </Card>
         <Card style={{ width: '18rem' }}>
@@ -114,7 +78,7 @@ function App() {
               Budjetti luokan hiiri. Ajaa asiansa välillä.<br></br>
               <div id='hinta'>5,95</div>
             </Card.Text>
-            <Button variant="primary"><img className='shoppingcartIcon' src='../cart.png' title='Lisää ostoskoriin'></img></Button>
+            <Button variant="primary"><img className='shoppingcartIcon' src='../cart.png' title='Lisää ostoskoriin' alt='hiiri2'></img></Button>
           </Card.Body>
         </Card>
         <Card style={{ width: '18rem' }}>
@@ -125,7 +89,7 @@ function App() {
               Maailman paras peli näppis! Et tule löytämään parempaa!<br></br>
               <div id='hinta'>119,95</div>
             </Card.Text>
-            <Button variant="primary"><img className='shoppingcartIcon' src='../cart.png' title='Lisää ostoskoriin'></img></Button>
+            <Button variant="primary"><img className='shoppingcartIcon' src='../cart.png' title='Lisää ostoskoriin'alt='näppäimistö1' ></img></Button>
           </Card.Body>
         </Card>
 
@@ -137,7 +101,7 @@ function App() {
               Maailman 2.  paras peli näppis! Hyvä se on, muttei paras. <br></br>
               <div id='hinta'>79,90</div>
             </Card.Text>
-            <Button variant="primary"><img className='shoppingcartIcon' src='../cart.png' title='Lisää ostoskoriin'></img></Button>
+            <Button variant="primary"><img className='shoppingcartIcon' src='../cart.png' title='Lisää ostoskoriin' alt='näppäimistö2'></img></Button>
           </Card.Body>
         </Card>
       </div>

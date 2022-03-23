@@ -1,7 +1,13 @@
 import React from 'react'
 import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
+import Nav from 'react-bootstrap/Nav';
+import Container from 'react-bootstrap/Container';
+import Form from 'react-bootstrap/Form';
+import FormControl from 'react-bootstrap/FormControl';
+import Button from 'react-bootstrap/Button';
 
-export default function navbar() {
+export default function Header() {
   return (
       <Navbar bg="dark" expand="lg">
           <Container fluid>
