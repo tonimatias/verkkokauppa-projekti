@@ -27,6 +27,7 @@ div h3 {
   text-align: center;
 }
 #cards {
+  padding-bottom: 50px;
   padding-left: 5em;
   padding-right: 5em;
   width: 100%;
