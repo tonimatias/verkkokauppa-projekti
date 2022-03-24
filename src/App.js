@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Carousel from 'react-bootstrap/Carousel';
-import Header from './Header.js'
+import Header from './pages/Header'
 
 function App() {
   return (
