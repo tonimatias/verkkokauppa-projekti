@@ -1,4 +1,5 @@
 import React from "react";
+import Kategoriat from '../components/Kategoriat';
 
 
 export default function Kuulokkeet() {
@@ -7,6 +8,7 @@ export default function Kuulokkeet() {
 
     return (
         <div>
+            < Kategoriat />
             <h1>Kuulokkeet</h1>
            {/* {products.map(product => (
 
