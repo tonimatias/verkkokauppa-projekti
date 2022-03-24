@@ -16,7 +16,15 @@ function App() {
     <div id='body'>
 
       < Header />
-        
+        <div>
+          <Routes>
+            <Route path='/' element={<Home />}/>
+            <Route path='/hiiret' element={<Hiiret />}/>
+            <Route path='/hiirimatot' element={<Hiirimatot />}/>
+            <Route path='/kuulokkeet' element={<Kuulokkeet />}/>
+            <Route path='/nappaimistot' element={<Nappaimistot />}/>
+          </Routes>
+        </div>
       < Home />
 
       <Footer />
