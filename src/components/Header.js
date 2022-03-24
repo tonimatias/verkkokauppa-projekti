@@ -9,36 +9,42 @@ import Button from 'react-bootstrap/Button';
 
 export default function Header() {
   return (
-      <Navbar bg="dark" expand="lg">
-          <Container fluid>
-              <Navbar.Brand href="<App />"> <img src='../Gaming Gadgets.png' className='logo' alt='logo'></img></Navbar.Brand>
-              <Navbar.Toggle aria-controls="navbarScroll" />
-              <Navbar.Collapse id="navbarScroll">
-                  <Nav
-                      className="me-auto my-2 my-lg-0"
-                      style={{ maxHeight: '200px' }}
-                      navbarScroll
-                  >
+    <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+  <div class="container-fluid">
+    <a class="logo" href="#"><img id='logo' src='../Gaming Gadgets.png'></img></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
 
-                      <Nav.Link href="#action2" id='link'>Etusivu</Nav.Link>
-                      <Nav.Link href="#" id='link'>Ostoskori</Nav.Link>
-                      <NavDropdown title="Kategoriat" id="navbarScrollingDropdown">
-                          <NavDropdown.Item href="< />">Hiiret</NavDropdown.Item>
-                          <NavDropdown.Item href="< />">Näppäimistöt</NavDropdown.Item>
-                          <NavDropdown.Item href="< />">Kuulokkeet</NavDropdown.Item>
-                      </NavDropdown>
-                  </Nav>
-                  <Form className="d-flex">
-                      <FormControl
-                          type="search"
-                          placeholder="Hae tuotteita"
-                          className="me-2"
-                          aria-label="Search"
-                      />
-                      <Button variant="outline-success">Haku</Button>
-                  </Form>
-              </Navbar.Collapse>
-          </Container>
-      </Navbar>
-  )
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#" id='link'>Etusivu</a>
+        </li>
+    
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id='link' role="button" data-bs-toggle="dropdown" aria-expanded="false">Kategoriat</a>
+
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Hiiret</a></li>
+            <li><a class="dropdown-item" href="#">Hiirimatot</a></li>
+            <li><a class="dropdown-item" href="#">Näppäimistöt</a></li>
+            <li><a class="dropdown-item" href="#">Kuulokkeet</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#" id='link'>Ostoskori</a>
+        </li>
+      </ul>
+
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Kirjoita hakusana" aria-label="Search"/>
+        <button class="btn btn-outline-success" type="submit">Hae</button>
+      </form>
+    </div>
+  </div>
+</nav>
+    
+)
 }

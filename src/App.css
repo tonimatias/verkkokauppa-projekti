@@ -8,19 +8,16 @@
   padding-bottom: 50px;
 }
 
-.logo {
+#logo {
   height: 80px;
   border-radius: 5px;
   transition: transform 0.3s;
 }
 
-.logo:hover {
+#logo:hover {
   transform: scale(1.1);
 }
 
-.me-auto_my-2_my-lg-0 {
-  color: white;
-}
 div h3 {
   padding-top: 15px;
   padding-bottom: 15px;
