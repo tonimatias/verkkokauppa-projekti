@@ -3,10 +3,11 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Carousel from 'react-bootstrap/Carousel';
 
-function Hiirimatot() {
+function Home() {
 
     return (
         <section id='content'>
+            
             <h3>Tarjoukset</h3>
 
             <Carousel id='carousel' variant='dark'>
@@ -104,4 +105,4 @@ function Hiirimatot() {
     );
 }
 
-export default Hiirimatot;
+export default Home;
