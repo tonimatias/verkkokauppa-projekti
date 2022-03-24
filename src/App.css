@@ -69,6 +69,9 @@ div h3 {
 #navbarScrollingDropdown {
   color: white;
 }
+.navbar-light .navbar-nav .nav-link {
+  color: white !important;
+}
 
 footer{
   /* height: 50px; */

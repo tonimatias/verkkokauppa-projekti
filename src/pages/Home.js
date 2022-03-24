@@ -3,7 +3,7 @@ import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Carousel from 'react-bootstrap/Carousel';
 
-function Home() {
+export default function Home() {
 
     return (
         <section id='content'>
@@ -104,5 +104,3 @@ function Home() {
         </section>
     );
 }
-
-export default Home;

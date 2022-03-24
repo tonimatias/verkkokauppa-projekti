@@ -1,7 +1,7 @@
 import React from "react";
 
 
-function Kuulokkeet() {
+export default function Kuulokkeet() {
 
     
 
@@ -24,5 +24,3 @@ function Kuulokkeet() {
         </div>
     );
 }
-
-export default Kuulokkeet;

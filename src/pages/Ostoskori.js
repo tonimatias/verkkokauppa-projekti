@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function Hiiret() {
+export default function Ostoskori() {
     return (
         <div>
-            <h1>Hiiret</h1>
+            <h1>Ostoskori</h1>
         </div>
     );
 }

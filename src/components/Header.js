@@ -20,22 +20,22 @@ export default function Header() {
 
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#" id='link'>Etusivu</a>
+          <Link className="nav-link" to="/">Etusivu</Link>
         </li>
     
         <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle" href="#" id='link' role="button" data-bs-toggle="dropdown" aria-expanded="false">Kategoriat</a>
 
           <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><Link className="dropdown-item" to='/pages/Hiiret'>Hiiret</Link></li>
-            <li><Link className="dropdown-item" to="/pages/Hiirimatot">Hiirimatot</Link></li>
-            <li><Link className="dropdown-item" to="/pages/Nappaimistot">Näppäimistöt</Link></li>
-            <li><Link className="dropdown-item" to="/pages/Kuulokkeet">Kuulokkeet</Link></li>
+            <li><Link className="dropdown-item" to="/Hiiret">Hiiret</Link></li>
+            <li><Link className="dropdown-item" to="/Hiirimatot">Hiirimatot</Link></li>
+            <li><Link className="dropdown-item" to="/Nappaimistot">Näppäimistöt</Link></li>
+            <li><Link className="dropdown-item" to="/Kuulokkeet">Kuulokkeet</Link></li>
           </ul>
         </li>
 
         <li className="nav-item">
-          <a className="nav-link active" aria-current="page" href="#" id='link'>Ostoskori</a>
+          <Link className="nav-link" to="/Ostoskori">Ostoskori</Link>
         </li>
       </ul>
 

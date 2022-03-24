@@ -7,6 +7,7 @@ import Hiiret from './pages/Hiiret';
 import Hiirimatot from './pages/Hiirimatot';
 import Kuulokkeet from './pages/Kuulokkeet';
 import Nappaimistot from './pages/Nappaimistot';
+import Ostoskori from './pages/Ostoskori';
 import { Route, Routes } from 'react-router';
 
 
@@ -23,9 +24,9 @@ function App() {
             <Route path='/hiirimatot' element={<Hiirimatot />}/>
             <Route path='/kuulokkeet' element={<Kuulokkeet />}/>
             <Route path='/nappaimistot' element={<Nappaimistot />}/>
+            <Route path='/ostoskori' element={<Ostoskori />}/>
           </Routes>
         </div>
-      < Home />
 
       <Footer />
 
