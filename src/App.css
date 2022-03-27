@@ -23,6 +23,11 @@ div h3 {
   padding-bottom: 15px;
   text-align: center;
 }
+
+h1{
+  text-align: center;
+}
+
 #cards {
   padding-bottom: 50px;
   padding-left: 5em;
