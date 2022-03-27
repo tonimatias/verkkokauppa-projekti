@@ -32,6 +32,12 @@ div h3 {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+.card-group {
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 100px;
+}
+
 #kuva {
   height: 200px;
 }
