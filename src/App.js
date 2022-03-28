@@ -10,13 +10,13 @@ import Nappaimistot from './pages/Nappaimistot';
 import Ostoskori from './pages/Ostoskori';
 import { Route, Routes } from 'react-router';
 
-
+const URL = 'http://localhost/gaminggadgets/';
 
 function App() {
   return (
     <div id='body'>
 
-      < Header />
+      < Header url={URL}/>
         <div>
           <Routes>
             <Route path='/' element={<Home />}/>

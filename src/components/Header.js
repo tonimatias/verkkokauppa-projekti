@@ -1,7 +1,21 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
 import { Link }  from 'react-router-dom';
+import axios from 'axios';
 
-export default function Header() {
+
+export default function Header({url}) {
+  const [categories, setCategories] = useState([]);
+
+  useEffect(() => {
+    axios.get(url + 'products/getcategories.php')
+    .then((response) => {
+      const json = response.data;
+      setCategories(json);
+    }).catch (error => {
+      alert(error.response === undefined ? error : error.response.data.error)
+    })
+  }, [])
+
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-dark">
   <div className="container-fluid">
@@ -18,13 +32,19 @@ export default function Header() {
     
         <li className="nav-item dropdown">
           <a className="nav-link dropdown-toggle" href="#" id='link' role="button" data-bs-toggle="dropdown" aria-expanded="false">Kategoriat</a>
-
           <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+          {categories.map(category => (
+            <li>
+              <Link className='dropdown-item' to={'/products/' + category.id}>{category.name}</Link>
+            </li>
+          ))}
+          </ul>
+         {/*  <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><Link className="dropdown-item" to="/Hiiret">Hiiret</Link></li>
             <li><Link className="dropdown-item" to="/Hiirimatot">Hiirimatot</Link></li>
             <li><Link className="dropdown-item" to="/Nappaimistot">Näppäimistöt</Link></li>
             <li><Link className="dropdown-item" to="/Kuulokkeet">Kuulokkeet</Link></li>
-          </ul>
+          </ul> */}
         </li>
 
         <li className="nav-item">
