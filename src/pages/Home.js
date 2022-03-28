@@ -52,55 +52,36 @@ export default function Home() {
             </Carousel>
 
             <div><h3>Suosituimmat tuotteet</h3></div>
-
-            <div id='cards'>
-                <Card style={{ width: '18rem' }}>
-                    <Card.Img variant="top" id='kuva' src="../hiiri.jpg" />
-                    <Card.Body>
-                        <Card.Title>Hiiri 1</Card.Title>
-                        <Card.Text>
-                            Älyttömän hyvä hiiri kaikkeen maholliseen näpyttelyyn!<br></br>
-                            <div id='hinta'>59,95</div>
-                        </Card.Text>
-                        <Button variant="primary"><img className='shoppingcartIcon' src='../cart.png' title='Lisää ostoskoriin' alt='hiiri1'></img></Button>
-                    </Card.Body>
-                </Card>
-                <Card style={{ width: '18rem' }}>
-                    <Card.Img variant="top" id='kuva' src="../hiiri.jpg" />
-                    <Card.Body>
-                        <Card.Title>Hiiri 2</Card.Title>
-                        <Card.Text>
-                            Budjetti luokan hiiri. Ajaa asiansa välillä.<br></br>
-                            <div id='hinta'>5,95</div>
-                        </Card.Text>
-                        <Button variant="primary"><img className='shoppingcartIcon' src='../cart.png' title='Lisää ostoskoriin' alt='hiiri2'></img></Button>
-                    </Card.Body>
-                </Card>
-                <Card style={{ width: '18rem' }}>
-                    <Card.Img variant="top" id='kuva' src="../keyboard1.jpg" />
-                    <Card.Body>
-                        <Card.Title>Näppäimistö</Card.Title>
-                        <Card.Text>
-                            Maailman paras peli näppis! Et tule löytämään parempaa!<br></br>
-                            <div id='hinta'>119,95</div>
-                        </Card.Text>
-                        <Button variant="primary"><img className='shoppingcartIcon' src='../cart.png' title='Lisää ostoskoriin' alt='näppäimistö1' ></img></Button>
-                    </Card.Body>
-                </Card>
-
-                <Card style={{ width: '18rem' }}>
-                    <Card.Img variant="top" id='kuva' src="../keyboard1.jpg" />
-                    <Card.Body>
-                        <Card.Title>Näppäimistö2</Card.Title>
-                        <Card.Text>
-                            Maailman 2.  paras peli näppis! Hyvä se on, muttei paras. <br></br>
-                            <div id='hinta'>79,90</div>
-                        </Card.Text>
-                        <Button variant="primary"><img className='shoppingcartIcon' src='../cart.png' title='Lisää ostoskoriin' alt='näppäimistö2'></img></Button>
-                    </Card.Body>
-                </Card>
-            </div>
-
+            <div class="card-group">
+     <div class="card">
+    <img src="../Hiiri.jpg" class="card-img-top" alt="..."></img>
+    <div class="card-body">
+      <h5 class="card-title">Hiiri</h5>
+      <p class="card-text">Halpa ja huono hiiri, älä osta tätä.</p>
+      <div id='hinta'> 4,95</div>
+      <Button variant="primary"><img className='shoppingcartIcon' src='../cart.png' title='Lisää ostoskoriin' alt='hiiri1'></img></Button>
+      
+    </div>
+  </div>
+  <div class="card">
+    <img src="../Hiiri.jpg" class="card-img-top" alt="..."></img>
+    <div class="card-body">
+      <h5 class="card-title">Hiiri 2</h5>
+      <p class="card-text">Vähän parempi hiiri.</p>
+      <div id='hinta'> 6,95</div>
+      <Button variant="primary"><img className='shoppingcartIcon' src='../cart.png' title='Lisää ostoskoriin' alt='hiiri1'></img></Button>
+    </div>
+  </div>
+  <div class="card">
+    <img src="../keyboard1.jpg" class="card-img-top" alt="..."></img>
+    <div class="card-body">
+      <h5 class="card-title">Näppäimistö</h5>
+      <p class="card-text">Ihan semi-hyvä näppäimistö</p>
+      <div id='hinta'> 74,95</div>
+      <Button variant="primary"><img className='shoppingcartIcon' src='../cart.png' title='Lisää ostoskoriin' alt='hiiri1'></img></Button>
+    </div>
+  </div>
+</div>
         </section>
     );
 }

@@ -37,15 +37,18 @@ h1{
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+
+
 .card-group {
   padding-left: 2em;
   padding-right: 2em;
   padding-bottom: 20px;
 }
 
-#kuva {
-  height: 200px;
+.card-img-top {
+  height: 300px;
 }
+
 
 .carousel h3, .carousel p{
   color: yellow;
