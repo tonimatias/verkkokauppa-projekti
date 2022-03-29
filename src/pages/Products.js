@@ -1,7 +1,7 @@
 import React from "react";
 import Kategoriat from '../components/Kategoriat';
 
-export default function Hiirimatot() {
+export default function Products() {
     return (
         <div>
             < Kategoriat />

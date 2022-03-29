@@ -4,11 +4,9 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Hiiret from './pages/Hiiret';
-import Hiirimatot from './pages/Hiirimatot';
-import Kuulokkeet from './pages/Kuulokkeet';
-import Nappaimistot from './pages/Nappaimistot';
 import Ostoskori from './pages/Ostoskori';
 import { Route, Routes } from 'react-router';
+import Products from './pages/Products';
 
 const URL = 'http://localhost/gaminggadgets/';
 
@@ -20,10 +18,8 @@ function App() {
         <div>
           <Routes>
             <Route path='/' element={<Home />}/>
-            <Route path='/hiiret' element={<Hiiret />}/>
-            <Route path='/hiirimatot' element={<Hiirimatot />}/>
-            <Route path='/kuulokkeet' element={<Kuulokkeet />}/>
-            <Route path='/nappaimistot' element={<Nappaimistot />}/>
+            <Route path='/hiiret' element={<Hiiret />}/> {/* tää on kans turha */}
+            <Route path='/products' element={<Products />}/>
             <Route path='/ostoskori' element={<Ostoskori />}/>
           </Routes>
         </div>
