@@ -18,8 +18,7 @@ function App() {
         <div>
           <Routes>
             <Route path='/' element={<Home />}/>
-            <Route path='/hiiret' element={<Hiiret />}/> {/* tää on kans turha */}
-            <Route path='/products' element={<Products />}/>
+            <Route path='/products/:category_id' element={<Products url={URL}/>}/>
             <Route path='/ostoskori' element={<Ostoskori />}/>
           </Routes>
         </div>
