@@ -1,8 +1,6 @@
 import axios from "axios";
-import Kategoriat from '../components/Kategoriat';
 import { useEffect, useState } from "react";
-import {Link, useParams} from "react-router-dom"
-import { Form } from "react-bootstrap";
+import { Link, useParams } from "react-router-dom"
 
 export default function Products({url}) {
 
@@ -12,7 +10,7 @@ export default function Products({url}) {
     let params = useParams();
 
     useEffect(() => {
-        axios.get(url + 'products/getproducts.php' + params.category_id)
+        axios.get(url + 'products/getproducts.php/' + params.categoryId)
         .then((response) => {
             const json = response.data;
             setCategoryName(json.category);
@@ -24,8 +22,12 @@ export default function Products({url}) {
 
     return (
         <div>
-            < Kategoriat />
-            
+           <h3>Kategoriat {categoryName} </h3>
+            {products.map(product => (
+                <div key={product.id}>
+                    {product.name}
+                </div>
+            ))}
         </div>
     );
 }

@@ -7,7 +7,7 @@ export default function Header({url}) {
   const [categories, setCategories] = useState([]);
 
   useEffect(() => {
-    axios.get(url + 'products/getcategories.php')
+    axios.get(url + 'products/getcategories.php/')
     .then((response) => {
       const json = response.data;
       setCategories(json);
