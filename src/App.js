@@ -7,7 +7,7 @@ import Ostoskori from './pages/Ostoskori';
 import { Route, Routes } from 'react-router';
 import Products from './pages/Products';
 
-const URL = 'http://localhost/gaminggadgets/';
+const URL = 'http://localhost/gaming_gadgets_backend/';
 
 function App() {
   return (
