@@ -12,7 +12,6 @@ const URL = 'http://localhost/gaming_gadgets_backend/';
 function App() {
   return (
     <div id='body'>
-
       < Header url={URL}/>
         <div>
           <Routes>
