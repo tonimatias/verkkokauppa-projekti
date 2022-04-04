@@ -65,6 +65,10 @@ h1{
   padding-top: auto;
 }
 
+#products {
+  margin-bottom: 30px;
+}
+
 
 .carousel h3, .carousel p{
   color: yellow;
