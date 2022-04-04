@@ -1,9 +1,10 @@
 import React, {useEffect, useState} from 'react'
 import { Link }  from 'react-router-dom';
 import axios from 'axios';
+import Cart from './Cart'
 
 
-export default function Header({url}) {
+export default function Header({url,cart}) {
   const [categories, setCategories] = useState([]);
 
   useEffect(() => {
@@ -49,6 +50,9 @@ export default function Header({url}) {
 
         <li className="nav-item">
           <Link className="nav-link" to="/Ostoskori">Ostoskori</Link>
+        </li>
+        <li className='nav-item'>
+            <Cart cart={cart}/>
         </li>
       </ul>
 
