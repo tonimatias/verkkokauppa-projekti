@@ -85,6 +85,11 @@ h1{
   text-shadow: white -1px 1px 1px;
 }
 
+.nav-item a {
+  text-decoration: none;
+}
+
+
 .shoppingcartIcon {
   height: 25px;
   width: 25px;
