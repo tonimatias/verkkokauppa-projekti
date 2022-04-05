@@ -56,8 +56,9 @@ h1{
 }
 
 .card-img-top {
-  height: 100px;
+  height: 10vw;
   width: auto;
+  object-fit: contain;
 }
 
 .card-body {
