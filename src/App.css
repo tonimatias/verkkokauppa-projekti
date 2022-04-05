@@ -85,6 +85,15 @@ h1{
   width: 25px;
 }
 
+.bi {
+  color: red;
+  
+}
+
+#cartLength {
+  
+  text-decoration: none;
+}
 .shoppingcartIcon:hover {
   animation: pulse 1s infinite;
   animation-timing-function: linear; 
