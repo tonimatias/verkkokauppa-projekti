@@ -23,19 +23,23 @@ export default function Products({url,addToCart}) {
     }, [params])
 
     //{product.image}
+    //, height: 24 + 'rem' 
+    //
     return (
         <div id="category">
            <h3>{categoryName}</h3>
            <div id="products">
             {products.map(product => (
                 <div key={product.id}>
-                    <div class="card" style={{width: 22 + 'rem', height: 24 + 'rem' }}>
+                    <div class="card" style={{width: 22 + 'rem', height: 24 + 'rem'}}>
                         <img src={url + 'images/' + product.image} class="card-img-top" alt="img"/>
                             <div class="card-body">
                                 <h5 class="card-title">{product.name}</h5>
                                 <p class="card-text">{product.description}</p>
-                                <Button onClick={e => addToCart(product)} variant="primary"><img className='shoppingcartIcon' src='../cart.png' title='Lisää ostoskoriin' alt='productImg'/></Button>
-                                <div id='hinta'>{product.price.toFixed(2)}</div>
+                                <div id="cardBottom">
+                                <span id='hinta'>{product.price.toFixed(2)}</span>
+                                <Button id="addToCart" onClick={e => addToCart(product)} variant="primary"><img className='shoppingcartIcon' src='../cart.png' title='Lisää ostoskoriin' alt='productImg'/></Button>
+                                </div>
                             </div>
                     </div>
                 </div>
