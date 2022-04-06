@@ -1,7 +1,7 @@
 import React from 'react';
 import uuid from 'react-uuid';
 
-export default function Order({cart}) {
+export default function Order({cart, removeFromCart}) {
     let sum = 0;
   return (
     <div>
@@ -14,7 +14,7 @@ export default function Order({cart}) {
                         <tr key={uuid()}>
                             <td>{product.name}</td>
                             <td>{product.price} €</td>
-                            <td></td>
+                            <td><a href='#' onClick={() => removeFromCart(product)}>Poista</a></td>
                         </tr>
                     )
                 })}
