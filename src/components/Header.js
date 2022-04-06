@@ -51,15 +51,17 @@ export default function Header({url,cart}) {
         <li className="nav-item">
           <Link className="nav-link" to="/Ostoskori">Ostoskori</Link>
         </li>
-        <li className='nav-item'>
-            <Cart cart={cart}/>
-        </li>
       </ul>
 
       <form className="d-flex">
         <input className="form-control me-2" type="search" placeholder="Kirjoita hakusana" aria-label="Search"/>
-        <button className="btn btn-outline-success" type="submit">Hae</button>
+       {/*  <button className="btn btn-outline-success" type="submit">Hae</button> */}
       </form>
+      <ul className='navba-nav ml-auto' id='shoppingCart'>
+        <li className='nav-item'>
+            <Cart cart={cart}/>
+        </li>
+        </ul>
     </div>
   </div>
 </nav>

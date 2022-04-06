@@ -89,6 +89,10 @@ h1{
   text-decoration: none;
 }
 
+#shoppingCart {
+  padding: 10px;
+  padding-top: 18px;
+}
 
 .shoppingcartIcon {
   height: 25px;
