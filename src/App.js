@@ -34,7 +34,7 @@ function App() {
   }
 
   function updateAmount(amount, product){
-    product.amout = amount;
+    product.amount = amount;
     const index = cart.findIndex((item => item.id === product.id));
     const modifiedCart = Object.assign([...cart],{[index]: product});
     setCart(modifiedCart);
@@ -64,7 +64,7 @@ function App() {
           <Routes>
             <Route path='/' element={<Home />}/>
             <Route path='/products/:categoryId' element={<Products url={URL} addToCart={addToCart}/>}/>
-            <Route path='/order' element={<Order cart={cart} removeFromCart={removeFromCart}/>}/>
+            <Route path='/order' element={<Order cart={cart} removeFromCart={removeFromCart} updateAmount={updateAmount}/>}/>
           </Routes>
         </div>
 
