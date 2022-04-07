@@ -145,14 +145,19 @@ form button {
   color: white;
 }
 
+.card-text {
+  overflow-y: hidden;
+}
+
 #addToCart {
   float: right;
 }
 
-/*#cardBottom {
+#cardBottom {
+  width: 85%;
   position: absolute;
   bottom: 5px;
-}*/
+}
 
 #hinta, #vanha-hinta {
   font-weight: bold;

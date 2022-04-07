@@ -31,7 +31,7 @@ export default function Products({url,addToCart}) {
            <div id="products">
             {products.map(product => (
                 <div key={product.id}>
-                    <div class="card" style={{width: 22 + 'rem', height: 24 + 'rem'}}>
+                    <div class="card" style={{width: 22 + 'rem', height: 26 + 'rem'}}>
                         <img src={url + 'images/' + product.image} class="card-img-top" alt="img"/>
                             <div class="card-body">
                                 <h5 class="card-title">{product.name}</h5>
