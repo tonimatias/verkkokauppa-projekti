@@ -40,12 +40,6 @@ export default function Header({url,cart}) {
             </li>
           ))}
           </ul>
-         {/*  <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><Link className="dropdown-item" to="/Hiiret">Hiiret</Link></li>
-            <li><Link className="dropdown-item" to="/Hiirimatot">Hiirimatot</Link></li>
-            <li><Link className="dropdown-item" to="/Nappaimistot">Näppäimistöt</Link></li>
-            <li><Link className="dropdown-item" to="/Kuulokkeet">Kuulokkeet</Link></li>
-          </ul> */}
         </li>
 
         <li className="nav-item">
@@ -53,10 +47,6 @@ export default function Header({url,cart}) {
         </li>
       </ul>
 
-      <form className="d-flex">
-        <input className="form-control me-2" type="search" placeholder="Kirjoita hakusana" aria-label="Search"/>
-       {/*  <button className="btn btn-outline-success" type="submit">Hae</button> */}
-      </form>
       <ul className='navba-nav ml-auto' id='shoppingCart'>
         <li className='nav-item'>
             <Cart cart={cart}/>
