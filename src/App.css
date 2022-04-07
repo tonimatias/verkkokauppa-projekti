@@ -96,6 +96,15 @@ h1{
   padding-top: 18px;
 }
 
+#cartLabel {
+  padding-right: 10px;
+  vertical-align: text-bottom;
+}
+
+#cartLength {
+  margin-left:3px;
+}
+
 .shoppingcartIcon {
   height: 25px;
   width: 25px;
@@ -117,6 +126,9 @@ h1{
   100% { transform: scale(1); }
   }
 
+label {
+  color:white;
+}
 
 #link {
   color: white;
