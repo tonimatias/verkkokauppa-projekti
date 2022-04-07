@@ -1,9 +1,9 @@
 import React from "react";
 
-export default function Ostoskori() {
+export default function Yllapito() {
     return (
         <div>
-            <h1>Ostoskori</h1>
+            <h1>Ylläpito</h1>
         </div>
     );
 }
