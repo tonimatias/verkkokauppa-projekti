@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
-import Ostoskori from './pages/Ostoskori';
+import Yllapito from './pages/Yllapito';
 import Order from './pages/Order';
 import { Route, Routes } from 'react-router';
 import Products from './pages/Products';
