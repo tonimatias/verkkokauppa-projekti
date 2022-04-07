@@ -50,7 +50,9 @@ h1{
   margin: 8px;
 }
 
-
+.card-title {
+  padding-bottom: 10px;
+}
 
 .card-group {
   padding-left: 2em;
@@ -104,10 +106,6 @@ h1{
   
 }
 
-#cartLength {
-  
-  text-decoration: none;
-}
 .shoppingcartIcon:hover {
   animation: pulse 1s infinite;
   animation-timing-function: linear; 
@@ -146,6 +144,15 @@ h1{
 form button {
   color: white;
 }
+
+#addToCart {
+  float: right;
+}
+
+/*#cardBottom {
+  position: absolute;
+  bottom: 5px;
+}*/
 
 #hinta, #vanha-hinta {
   font-weight: bold;
