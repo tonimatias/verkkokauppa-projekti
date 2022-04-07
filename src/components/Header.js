@@ -40,12 +40,6 @@ export default function Header({url,cart}) {
             </li>
           ))}
           </ul>
-         {/*  <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><Link className="dropdown-item" to="/Hiiret">Hiiret</Link></li>
-            <li><Link className="dropdown-item" to="/Hiirimatot">Hiirimatot</Link></li>
-            <li><Link className="dropdown-item" to="/Nappaimistot">Näppäimistöt</Link></li>
-            <li><Link className="dropdown-item" to="/Kuulokkeet">Kuulokkeet</Link></li>
-          </ul> */}
         </li>
 
         <li className="nav-item">
