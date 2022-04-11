@@ -36,7 +36,7 @@ export default function Order({cart,removeFromCart,updateAmount}) {
                         <tr key={uuid()}>
                             <td>{product.name}</td>
                             <td>{product.price.toFixed(2)} €</td>
-                            <td>{product.old_price.toFixed(2)} €</td>
+                            
                             <td>
                                 <input /* type='number' */ ref={inputs[index]} style={{width: '60px'}} value={product.amount} onChange={e => changeAmount(e,product)}></input>
                             </td>
