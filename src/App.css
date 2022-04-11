@@ -171,14 +171,15 @@ form button {
   bottom: 5px;
 }
 
-#hinta, #vanha-hinta {
+#hinta{
   font-weight: bold;
   color: red;
   /*text-decoration: line-through;*/
 }
 
-#vanha-hinta{
+#vanhaHinta{
   text-decoration: line-through;
+  padding: 5px;
   color: grey;
 }
 
