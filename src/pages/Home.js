@@ -2,9 +2,29 @@ import React from "react";
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import Carousel from 'react-bootstrap/Carousel';
+import axios from "axios";
+import { useEffect, useState } from "react";
+import { Link, useParams } from "react-router-dom"
 
-export default function Home() {
+export default function Home({url,addToCart}) {
 
+    //export default function Products({url,addToCart}) {
+
+        //const [categoryName, setCategoryName] = useState('');
+       /* const [products, setProducts] = useState([]);
+    
+        let params = useParams();
+    
+        useEffect(() => {
+            axios.get(url + 'products/getdiscountproducts.php/')
+            .then((response) => {
+                const json = response.data;
+                setProducts(json.products)
+            }).catch(error => {
+                alert(error.response === undefined ? error : error.response.data.error);
+            })
+        }, [params])
+*/
     return (
         <section id='content'>
             
