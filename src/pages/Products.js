@@ -38,6 +38,7 @@ export default function Products({url,addToCart}) {
                                 <p class="card-text">{product.description}</p>
                                 <div id="cardBottom">
                                 <span id='hinta'>{product.price.toFixed(2)}</span>
+                                <span id='uusi_hinta'>{product.old_price.toFixed(2)}</span>
                                 <Button id="addToCart" onClick={e => addToCart(product)} variant="primary"><img className='shoppingcartIcon' src='../cart.png' title='Lisää ostoskoriin' alt='productImg'/></Button>
                                 </div>
                             </div>
