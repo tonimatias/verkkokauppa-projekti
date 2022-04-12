@@ -31,11 +31,11 @@ export default function Products({url,addToCart}) {
            <div id="products">
             {products.map(product => (
                 <div key={product.id}>
-                    <div class="card" style={{width: 22 + 'rem', height: 26 + 'rem'}}>
-                        <img src={url + 'images/' + product.image} class="card-img-top" alt="img"/>
-                            <div class="card-body">
-                                <h5 class="card-title">{product.name}</h5>
-                                <p class="card-text">{product.description}</p>
+                    <div className="card" style={{width: 22 + 'rem', height: 26 + 'rem'}}>
+                        <img src={url + 'images/' + product.image} className="card-img-top" alt="img"/>
+                            <div className="card-body">
+                                <h5 className="card-title">{product.name}</h5>
+                                <p className="card-text">{product.description}</p>
                                 <div id="cardBottom">
                                 <span id='hinta'>{product.price.toFixed(2)}</span>
                                 <span id='vanhaHinta'>{product.old_price}</span>
