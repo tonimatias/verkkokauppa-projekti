@@ -60,7 +60,7 @@ export default function Order({cart,removeFromCart,updateAmount, empty}) {
 
 if (finished === false){
   return (
-    <div>
+    <div  id='order'>
         <h3 className='header'>Ostoskorin tuotteet</h3>
         <table className='table'>
             <tbody>
