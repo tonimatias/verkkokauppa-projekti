@@ -57,6 +57,36 @@ function App() {
       localStorage.setItem('cart',JSON.stringify(newCart)); */
   }
 
+  function emptyCart(){
+    setCart([]);
+    localStorage.removeItem('cart');
+  }
+
+  /* function order(e) {
+    e.preventDefault();
+
+    const json = JSON.stringify({
+      firstname: firstname,
+      lastname: lastname,
+      address: address,
+      zip: zip,
+      city: city,
+      cart: cart,
+    });
+    axios.post(URL + 'order/save.php',json,{
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type' : 'application/json'
+      }
+    })
+    .then(() => {
+      empty();
+      setFinished(true);
+    }).catch(error => {
+      alert(error.response === undefined ? error : error.response.data.error)
+    })
+  } */
+
   return (
     <div id='body'>
       < Header url={URL} cart={cart}/>
@@ -64,7 +94,7 @@ function App() {
           <Routes>
             <Route path='/' element={<Home />}/>
             <Route path='/products/:categoryId' element={<Products url={URL} addToCart={addToCart}/>}/>
-            <Route path='/order' element={<Order cart={cart} removeFromCart={removeFromCart} updateAmount={updateAmount}/>}/>
+            <Route path='/order' element={<Order cart={cart} removeFromCart={removeFromCart} updateAmount={updateAmount} empty={emptyCart}/>}/>
           </Routes>
         </div>
 

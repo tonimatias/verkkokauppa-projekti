@@ -126,8 +126,13 @@ h1{
   100% { transform: scale(1); }
   }
 
-label {
+#cartLabel {
   color:white;
+}
+
+#clientInfo{
+  margin-bottom: 30px;
+  color: aqua;
 }
 
 #link {
