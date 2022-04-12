@@ -70,7 +70,7 @@ if (finished === false){
                         <tr key={uuid()}>
                             <td>{product.name}</td>
                             <td>{product.price.toFixed(2)} €</td>
-                            <td></td>
+                            
                             <td>
                                 <input /* type='number' */ ref={inputs[index]} style={{width: '60px'}} value={product.amount} onChange={e => changeAmount(e,product)}></input>
                             </td>
