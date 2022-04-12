@@ -62,7 +62,7 @@ function App() {
       < Header url={URL} cart={cart}/>
         <div>
           <Routes>
-            <Route path='/' element={<Home />}/>
+            <Route path='/' element={<Home url={URL} addToCart={addToCart}/>}/>
             <Route path='/products/:categoryId' element={<Products url={URL} addToCart={addToCart}/>}/>
             <Route path='/order' element={<Order cart={cart} removeFromCart={removeFromCart} updateAmount={updateAmount}/>}/>
           </Routes>
