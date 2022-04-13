@@ -40,11 +40,11 @@ export default function Home({url,addToCart}) {
             <div id="discountProducts">
             {products.map(product => (
                 <div key={product.id}>
-                    <div class="card" style={{width: 20 + 'rem', height: 24 + 'rem'}}>
-                        <img src={url + 'images/' + product.image} class="card-img-top" alt="img"/>
-                            <div class="card-body">
-                                <h5 class="card-title">{product.name}</h5>
-                                <p class="card-text">{product.description}</p>
+                    <div className="card" style={{width: 20 + 'rem', height: 24 + 'rem'}}>
+                        <img src={url + 'images/' + product.image} className="card-img-top" alt="img"/>
+                            <div className="card-body">
+                                <h5 className="card-title">{product.name}</h5>
+                                <p className="card-text">{product.description}</p>
                                 <div id="cardBottom">
                                 <span id='hinta'>{product.price.toFixed(2)}</span>
                                 <span id='vanhaHinta'>{product.old_price}</span>
@@ -61,11 +61,11 @@ export default function Home({url,addToCart}) {
              <div id="discountProducts">
             {products.map(popular_product => (
                 <div key={popular_product.id}>
-                    <div class="card" style={{width: 20 + 'rem', height: 24 + 'rem'}}>
-                        <img src={url + 'images/' + popular_product.image} class="card-img-top" alt="img"/>
-                            <div class="card-body">
-                                <h5 class="card-title">{popular_product.name}</h5>
-                                <p class="card-text">{popular_product.description}</p>
+                    <div className="card" style={{width: 20 + 'rem', height: 24 + 'rem'}}>
+                        <img src={url + 'images/' + popular_product.image} className="card-img-top" alt="img"/>
+                            <div className="card-body">
+                                <h5 className="card-title">{popular_product.name}</h5>
+                                <p className="card-text">{popular_product.description}</p>
                                 <div id="cardBottom">
                                 <span id='hinta'>{popular_product.price.toFixed(2)}</span>
                                 <span id='vanhaHinta'>{popular_product.old_price}</span>
