@@ -3,7 +3,7 @@ import uuid from 'react-uuid';
 import {useState, useEffect} from 'react';
 import axios from "axios";
 
-export default function Order({cart,removeFromCart,updateAmount, empty}) {
+export default function Order({url,cart,removeFromCart,updateAmount, empty}) {
     const [inputs,_] = useState([]);
     const [inputIndex, setInputIndex] = useState(-1);
     const [firstname, setFirstname] = useState('');
@@ -18,6 +18,7 @@ export default function Order({cart,removeFromCart,updateAmount, empty}) {
     function order(e) {
         e.preventDefault();
     
+
         const json = JSON.stringify({
           firstname: firstname,
           lastname: lastname,
@@ -26,7 +27,7 @@ export default function Order({cart,removeFromCart,updateAmount, empty}) {
           city: city,
           cart: cart,
         });
-        axios.post(URL + 'order/save.php',json,{
+        axios.post(url + 'order/save.php',json,{
           headers: {
             'Accept': 'application/json',
             'Content-Type' : 'application/json'
@@ -93,23 +94,23 @@ if (finished === false){
         <form onSubmit={order}>
             <div className='form-group'>
                 <label style={{color:'black'}}>Etunimi:</label>
-                <input className='form-control' onChange={e => setFirstname(e.target.value)}></input>
+                <input className='form-control' required onChange={e => setFirstname(e.target.value)}></input>
             </div>
             <div className='form-group'>
                 <label style={{color:'black'}}>Sukunimi:</label>
-                <input className='form-control' onChange={e => setLastname(e.target.value)}></input>
+                <input className='form-control' required onChange={e => setLastname(e.target.value)}></input>
             </div>
             <div className='form-group'>
                 <label style={{color:'black'}}>Osoite:</label>
-                <input className='form-control' onChange={e => setAddress(e.target.value)}></input>
+                <input className='form-control' required onChange={e => setAddress(e.target.value)}></input>
             </div>
             <div className='form-group'>
                 <label style={{color:'black'}}>Postinumero:</label>
-                <input className='form-control' onChange={e => setZip(e.target.value)}></input>
+                <input className='form-control'required onChange={e => setZip(e.target.value)}></input>
             </div>
             <div className='form-group'>
                 <label style={{color:'black'}}>Kaupunki:</label>
-                <input className='form-control' onChange={e => setCity(e.target.value)}></input>
+                <input className='form-control' required onChange={e => setCity(e.target.value)}></input>
             </div>
             <div className='buttons' id='orderButton'>
                 <button className='btn btn-primary'>Tilaa</button>
