@@ -3,7 +3,7 @@ import uuid from 'react-uuid';
 import {useState, useEffect} from 'react';
 import axios from "axios";
 
-export default function Order({cart,removeFromCart,updateAmount, empty}) {
+export default function Order({url,cart,removeFromCart,updateAmount, empty}) {
     const [inputs,_] = useState([]);
     const [inputIndex, setInputIndex] = useState(-1);
     const [firstname, setFirstname] = useState('');
@@ -26,7 +26,7 @@ export default function Order({cart,removeFromCart,updateAmount, empty}) {
           city: city,
           cart: cart,
         });
-        axios.post(URL + 'order/save.php',json,{
+        axios.post(url + 'order/save.php',json,{
           headers: {
             'Accept': 'application/json',
             'Content-Type' : 'application/json'
