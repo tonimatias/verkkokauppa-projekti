@@ -49,6 +49,13 @@ h1{
   flex-direction: row;
 }
 
+#order{
+  min-width: fit-content;
+  width: 40vw;
+  padding: 20px;
+  padding-bottom: 150px;
+}
+
 #category {
   max-width: 100%;
   padding-bottom: 100px
@@ -131,8 +138,13 @@ h1{
   100% { transform: scale(1); }
   }
 
-label {
+#cartLabel {
   color:white;
+}
+
+#clientInfo{
+  margin-bottom: 30px;
+  color: aqua;
 }
 
 #link {
