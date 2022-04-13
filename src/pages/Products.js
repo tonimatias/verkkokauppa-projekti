@@ -22,9 +22,6 @@ export default function Products({url,addToCart}) {
         })
     }, [params])
 
-    //{product.image}
-    //, height: 24 + 'rem' 
-    //
     return (
         <div id="category">
            <h3>{categoryName}</h3>
