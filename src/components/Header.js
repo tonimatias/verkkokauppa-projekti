@@ -18,7 +18,7 @@ export default function Header({ url, cart }) {
   }, [])
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-dark">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">
         <Link className="logo" to="/"><img id='logo' src='../Gaming Gadgets.png'></img></Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,7 +28,7 @@ export default function Header({ url, cart }) {
 
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <Link className="nav-link" to="/">Etusivu</Link>
+              <Link className="nav-link" to="/" style={{color:'white'}} >Etusivu</Link>
             </li>
 
             <li className="nav-item dropdown">
@@ -43,7 +43,7 @@ export default function Header({ url, cart }) {
             </li>
 
             <li className="nav-item">
-              <Link className="nav-link" to="/Yllapito">Ylläpito</Link>
+              <Link className="nav-link" to="/Yllapito"style={{color:'white'}}>Ylläpito</Link>
             </li>
           </ul>
 
