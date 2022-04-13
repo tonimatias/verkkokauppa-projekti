@@ -20,13 +20,6 @@ function App() {
     }
   }, [])
   
-
-/*   function addToCart(product) {
-    const newCart = [...cart,product];
-    setCart(newCart);
-    localStorage.setItem('cart',JSON.stringify(newCart));
-  }
- */
   function removeFromCart(product) {
     const itemsWithoutRemoved = cart.filter(item => item.id !== product.id);
     setCart(itemsWithoutRemoved);
@@ -51,10 +44,7 @@ function App() {
       setCart(newCart);
       localStorage.setItem('cart',JSON.stringify(newCart));
     }
-      /*  product['amount'] = 1;
-      const newCart = [...cart,product];
-      setCart(newCart);
-      localStorage.setItem('cart',JSON.stringify(newCart)); */
+
   }
 
   function emptyCart(){
@@ -62,30 +52,6 @@ function App() {
     localStorage.removeItem('cart');
   }
 
-  /* function order(e) {
-    e.preventDefault();
-
-    const json = JSON.stringify({
-      firstname: firstname,
-      lastname: lastname,
-      address: address,
-      zip: zip,
-      city: city,
-      cart: cart,
-    });
-    axios.post(URL + 'order/save.php',json,{
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type' : 'application/json'
-      }
-    })
-    .then(() => {
-      empty();
-      setFinished(true);
-    }).catch(error => {
-      alert(error.response === undefined ? error : error.response.data.error)
-    })
-  } */
 
   return (
     <div id='body'>
