@@ -43,11 +43,11 @@ export default function Header({ url, cart }) {
             </li>
 
             <li className="nav-item">
-              <Link className="nav-link" to="/ManageCategories.js"style={{color:'white'}}>Kategorioiden ylläpito</Link>
+              <Link className="nav-link" to="/managecategories"style={{color:'white'}}>Tuotteiden ylläpito</Link>
             </li>
 
-            <li className="nav-item">
-              <Link className="nav-link" to="/ManageProducts.js"style={{color:'white'}}>Tuotteiden ylläpito</Link>
+           <li className="nav-item">
+              <Link className="nav-link" to="/manageproducts"style={{color:'white'}}>Tuotteiden ylläpito</Link>
             </li>
           </ul>
 
