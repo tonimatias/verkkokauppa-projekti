@@ -54,7 +54,7 @@ export default function ManageProducts({url}) {
                     selectedCategory={selectedCategory}
                     setSelectedCategory={setSelectedCategory}
                 />
-                <table className>
+                <table className='table'>
                     <thead>
                         <tr key={uuid()}>
                             <th>Name</th>
@@ -86,7 +86,7 @@ export default function ManageProducts({url}) {
                     </div>
                     <div>
                         <label>Product price</label>
-                        <input type="text" value={productName} onChange={(e) => setPrice(e.target.value)}/>
+                        <input type="text" value={price} onChange={(e) => setPrice(e.target.value)}/>
                     </div>
                     <button type="button" onClick={() => setAddingProduct(false)}>Cancel</button>
                     <button type="submit">Save</button>
