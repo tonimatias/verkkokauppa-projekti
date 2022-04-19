@@ -114,6 +114,10 @@ h1{
   color: rgb(208,75,75);
 }
 
+.fa {
+  color: rgb(208,75,75);
+}
+
 .shoppingcartIcon:hover {
   animation: pulse 1s infinite;
   animation-timing-function: linear; 
