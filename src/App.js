@@ -4,6 +4,8 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
 import Yllapito from './pages/Yllapito';
+import ManageCategories from './pages/ManageCategories'
+import ManageProducts from './pages/ManageProducts'
 import Order from './pages/Order';
 import { Route, Routes } from 'react-router';
 import Products from './pages/Products';
@@ -61,6 +63,8 @@ function App() {
             <Route path='/' element={<Home url={URL} addToCart={addToCart}/>}/>
             <Route path='/products/:categoryId' element={<Products url={URL} addToCart={addToCart}/>}/>
             <Route path='/order' element={<Order cart={cart} removeFromCart={removeFromCart} updateAmount={updateAmount} empty={emptyCart}url={URL}/>}/>
+            <Route path='/managecategories' element={<ManageCategories url={URL} addToCart={addToCart}/>}/>
+            <Route path='/manageproducts' element={<ManageProducts url={URL} addToCart={addToCart}/>}/>
           </Routes>
         </div>
 
