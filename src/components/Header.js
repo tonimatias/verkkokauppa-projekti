@@ -43,7 +43,7 @@ export default function Header({ url, cart }) {
             </li>
 
             <li className="nav-item">
-              <Link className="nav-link" to="/managecategories"style={{color:'white'}}>Tuotteiden ylläpito</Link>
+              <Link className="nav-link" to="/managecategories"style={{color:'white'}}>Kategorioiden ylläpito</Link>
             </li>
 
            <li className="nav-item">

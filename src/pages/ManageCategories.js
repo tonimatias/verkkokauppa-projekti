@@ -35,7 +35,7 @@ export default function ManageCategories({url}) {
                         selectedCategory={selectedCategory}
                         setSelectedCategory={setSelectedCategory}
                     />
-                    <button className="btn btn-dark" type="button" onclick={() => setAddingCategory(true)}>Add</button>
+                    <button className="btn btn-dark" type="button" onClick={() => setAddingCategory(true)}>Add</button>
                 </div>
             </>
         )

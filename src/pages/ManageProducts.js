@@ -71,7 +71,7 @@ export default function ManageProducts({url}) {
                     </tbody>
                 </table>
                 <div>
-                    <button className="btn btn-dark" type="button" onclick={() => setAddingProduct(true)}>Add</button>
+                    <button className="btn btn-dark" type="button" onClick={() => setAddingProduct(true)}>Add</button>
                 </div>
             </>
         )
