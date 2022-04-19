@@ -1,7 +1,12 @@
 #body {
   min-height: 100vh;
   position: relative;
-  background: linear-gradient(rgb(255, 255, 255), rgb(219, 219, 219));
+  background: linear-gradient(rgb(255, 255, 255), rgb(200, 200, 200));
+}
+
+.heading {
+  color: rgb(224, 60, 60);
+  text-shadow: 1px 1px 1px rgb(47, 47, 47);
 }
 
 #content{
@@ -71,13 +76,6 @@ h1{
   padding-bottom: 10px;
 }
 
-.card-group {
-  padding-left: 2em;
-  padding-right: 2em;
-  padding-bottom: 20px;
-  margin-bottom: 35px;
-}
-
 .card-img-top {
   height: 10vw;
   width: auto;
@@ -87,17 +85,6 @@ h1{
 .card-body {
   padding-bottom: 20px;
   padding-top: auto;
-}
-
-
-.carousel h3, .carousel p{
-  color: yellow;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-}
-
-.carousel p {
-  color: black;
-  text-shadow: white -1px 1px 1px;
 }
 
 .nav-item a {
@@ -124,8 +111,7 @@ h1{
 }
 
 .bi {
-  color: red;
-  
+  color: rgb(224, 60, 60);
 }
 
 .shoppingcartIcon:hover {
@@ -180,6 +166,8 @@ form button {
 
 #addToCart {
   float: right;
+  background-color: rgb(224, 60, 60);
+  border: solid 1px rgb(47, 47, 47);
 }
 
 #cardBottom {
@@ -191,7 +179,6 @@ form button {
 #hinta{
   font-weight: bold;
   color: red;
-  /*text-decoration: line-through;*/
 }
 
 #vanhaHinta{

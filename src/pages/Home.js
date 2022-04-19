@@ -37,7 +37,7 @@ export default function Home({url,addToCart}) {
 
     return (
         <section id='content'>
-            <h3>Tarjoustuotteet</h3>
+            <h3 className="heading">Tarjoustuotteet</h3>
 
             <div id="discountProducts">
             {products.map(product => (
@@ -58,7 +58,7 @@ export default function Home({url,addToCart}) {
             ))}
             </div>
 
-            <h3>Suosituimmat</h3>
+            <h3 className="heading">Suosituimmat</h3>
 
             <div id="discountProducts">
             {popularProducts.map(product => (
