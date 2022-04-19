@@ -18,7 +18,7 @@ export default function Header({ url, cart }) {
   }, [])
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav className="navbar navbar-expand-lg navbar-dark">
       <div className="container-fluid">
         <Link className="logo" to="/"><img id='logo' src='../Gaming Gadgets.png'></img></Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
