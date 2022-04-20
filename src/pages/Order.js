@@ -73,7 +73,7 @@ if (finished === false){
                             <td>{product.price.toFixed(2)} €</td>
                             
                             <td>
-                                <input /* type='number' */ ref={inputs[index]} style={{width: '60px'}} value={product.amount} onChange={e => changeAmount(e,product)}></input>
+                                <input type='number' ref={inputs[index]} style={{width: '60px'}} value={product.amount} onChange={e => changeAmount(e,product,index)}></input>
                             </td>
                             <td><a href='#' onClick={() => removeFromCart(product)}>Poista</a></td>
                         </tr>
