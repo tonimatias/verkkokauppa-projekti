@@ -27,10 +27,6 @@ export default function Header({ url, cart }) {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
 
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-            <li className="nav-item">
-              <Link className="nav-link" to="/" style={{color:'white'}} >Etusivu</Link>
-            </li>
-
             <li className="nav-item dropdown">
               <a className="nav-link dropdown-toggle" href="#" id='link' role="button" data-bs-toggle="dropdown" aria-expanded="false">Kategoriat</a>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
