@@ -9,7 +9,7 @@ export default function Footer() {
                     <span>&copy; Gaming Gadgets</span>
                 </div>
                 <div className="col-md-4">
-                    <span>Yhteystiedot: </span><br />
+                    
                     <span>Puhelin: +666 666 66666</span><br />
                     <span>Sähköposti: gaming.gadgets@giimeil.com</span>
                 </div>

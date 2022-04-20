@@ -42,7 +42,6 @@ h1{
   padding-left: 5em;
   padding-right: 5em;
   display: flex;
-  /* grid-template-columns: 1fr 1fr 1fr; */
   flex-wrap: wrap;
   justify-content: space-evenly;
   justify-items: center;
@@ -154,7 +153,7 @@ h1{
 }
 
  footer {
-  /* height: 50px; */
+  
   color: white;
   position: absolute;
   bottom: 0;
@@ -197,11 +196,7 @@ form button {
   color: grey;
 }
 
-.carousel img{
-  width: 50%;
-  margin: auto;
-  max-height: 500px;
-}
+
 
 .icon-style {
   color: white !important;
@@ -237,14 +232,18 @@ form button {
     padding: auto;
     width: 100%;
     display: inline-block;
-    /* grid-template-columns: 1fr;*/
   }
 
   #content{
     align-content: space-around;
   }
 
+  form {
+    margin-bottom: 50px;
+  }
+
   footer {
+    padding-left: 10px;
     margin-top: 50px;
   }
 
