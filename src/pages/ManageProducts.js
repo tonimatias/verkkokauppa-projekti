@@ -47,7 +47,7 @@ export default function ManageProducts({url}) {
 
     if (!addingProduct) {
         return (
-            <>
+            <div id='manage'>
                 <h3>Manage products</h3>
                 <CategoryList
                     url={url}
@@ -73,11 +73,11 @@ export default function ManageProducts({url}) {
                 <div>
                     <button className="btn btn-dark" type="button" onClick={() => setAddingProduct(true)}>Add</button>
                 </div>
-            </>
+            </div>
         )
     } else {
         return (
-            <>
+            <div id='manage'>
                 <h3>Add new product</h3>
                 <form onSubmit={saveProduct}>
                     <div>
@@ -91,7 +91,7 @@ export default function ManageProducts({url}) {
                     <button type="button" onClick={() => setAddingProduct(false)}>Cancel</button>
                     <button type="submit">Save</button>
                 </form>
-            </>
+            </div>
         )
     }
 }
