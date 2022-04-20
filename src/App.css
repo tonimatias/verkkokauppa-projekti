@@ -175,7 +175,7 @@ form button {
 #addToCart {
   float: right;
   background-color: rgb(208,75,75);
-  border: solid 1px rgba(5,24,36,255);
+  border: solid 1px rgb(5,24,36);
 }
 
 #cardBottom {
