@@ -82,9 +82,11 @@ h1{
 }
 
 .card-img-top {
-  height: 10vw;
+  min-height: 130px;
+  height: 130px;
   width: auto;
   object-fit: contain;
+  
 }
 
 .card-body {
@@ -208,13 +210,13 @@ form button {
 }
 
 @media screen and (max-width: 1233px){
-  #products {
+  /* #products {
     padding-left: 5em;
     padding-right: 5em;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-  }
+  } */
 
   #discountProducts {
     padding-bottom: 50px;
@@ -228,11 +230,11 @@ form button {
 }
 
 @media screen and (max-width: 670px){
-  #products {
+  /* #products {
     padding: auto;
     width: 100%;
     display: inline-block;
-  }
+  } */
 
   #content{
     align-content: space-around;
