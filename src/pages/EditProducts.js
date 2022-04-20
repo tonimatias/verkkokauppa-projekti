@@ -13,6 +13,8 @@ export default function ManageProducts({url}) {
     const [price,setPrice] = useState('');
     const [oldPrice,setOldPrice] = useState('null');
     const [productDescription,setProductDescription] = useState('');
+    const [productId,setProductId] = useState('');
+
 
     useEffect(() => {
         if (selectedCategory !== null) {
@@ -35,9 +37,10 @@ export default function ManageProducts({url}) {
             price: price,
             oldprice: oldPrice,
             description: productDescription,
-            categoryid: selectedCategory.id
+            categoryid: selectedCategory.id,
+            productid: productId
         });
-        axios.post(url + 'products/addproduct.php',json,{
+        axios.post(url + 'products/editproduct.php',json,{
             headers: {
                 'Content-Type' : 'application/json'
             }
@@ -45,50 +48,43 @@ export default function ManageProducts({url}) {
         .then((response) => {
             const updatedProducts = [...products,response.data];
             setProducts(updatedProducts);
-            setAddingProduct(false);
         }).catch(error => {
             alert(error.response === undefined ? error : error.response.data.error);
         })
     }
 
-    if (!addingProduct) {
-        return (
-            <div id='manage'>
-                <h3>Manage products</h3>
-                <CategoryList
-                    url={url}
-                    selectedCategory={selectedCategory}
-                    setSelectedCategory={setSelectedCategory}
-                />
-                <table className='table'>
-                    <thead>
+    return (
+        <div id='manage'>
+            <h3>Manage products</h3>
+            <CategoryList
+                url={url}
+                selectedCategory={selectedCategory}
+                setSelectedCategory={setSelectedCategory}
+            />
+            <table className='table'>
+                <thead>
+                    <tr key={uuid()}>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>Old Price</th>
+                        <th>Description</th>
+                        <th>Product ID</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {products.map((product) => (
                         <tr key={uuid()}>
-                            <th>Name</th>
-                            <th>Price</th>
-                            <th>Old Price</th>
-                            <th>Description</th>
+                        <td>{product.name}</td>
+                        <td>{product.price} €</td>
+                        <td>{product.old_price} €</td>
+                        <td>{product.description}</td>
+                        <td>{product.id}</td>
                         </tr>
-                    </thead>
-                    <tbody>
-                        {products.map((product) => (
-                            <tr key={uuid()}>
-                            <td>{product.name}</td>
-                            <td>{product.price.toFixed(2)} €</td>
-                            <td>{product.old_price} €</td>
-                            <td>{product.description}</td>
-                            </tr>
-                        ))}
-                    </tbody>
-                </table>
-                <div>
-                    <button className="btn btn-dark" type="button" onClick={() => setAddingProduct(true)}>Add</button>
-                </div>
-            </div>
-        )
-    } else {
-        return (
+                    ))}
+                </tbody>
+            </table>
             <div id='manageForm'>
-                <h3>Add new product</h3>
+                <h3>Edit existing products</h3>
                 <form onSubmit={saveProduct}>
                     <div>
                         <label>Product name</label>
@@ -106,10 +102,13 @@ export default function ManageProducts({url}) {
                         <label>Product description</label>
                         <input type="text" value={productDescription} onChange={(e) => setProductDescription(e.target.value)}/>
                     </div>
-                    <button type="button" onClick={() => setAddingProduct(false)}>Cancel</button>
+                    <div>
+                        <label>Product ID</label>
+                        <input type="text" value={productId} onChange={(e) => setProductId(e.target.value)}/>
+                    </div>
                     <button type="submit">Save</button>
                 </form>
             </div>
-        )
-    }
+        </div>
+    )
 }

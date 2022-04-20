@@ -45,6 +45,10 @@ export default function Header({ url, cart }) {
            <li className="nav-item">
               <Link className="nav-link" to="/manageproducts"style={{color:'white'}}>Tuotteiden ylläpito</Link>
             </li>
+
+            <li className="nav-item">
+              <Link className="nav-link" to="/editproducts"style={{color:'white'}}>Tuotteiden muokkaus</Link>
+            </li>
           </ul>
 
           <ul className='navba-nav ml-auto' id='shoppingCart'>

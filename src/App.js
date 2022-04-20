@@ -6,6 +6,7 @@ import Home from './pages/Home';
 import Yllapito from './pages/Yllapito';
 import ManageCategories from './pages/ManageCategories'
 import ManageProducts from './pages/ManageProducts'
+import EditProducts from './pages/EditProducts'
 import Order from './pages/Order';
 import { Route, Routes } from 'react-router';
 import Products from './pages/Products';
@@ -65,6 +66,7 @@ function App() {
             <Route path='/order' element={<Order cart={cart} removeFromCart={removeFromCart} updateAmount={updateAmount} empty={emptyCart}url={URL}/>}/>
             <Route path='/managecategories' element={<ManageCategories url={URL} addToCart={addToCart}/>}/>
             <Route path='/manageproducts' element={<ManageProducts url={URL} addToCart={addToCart}/>}/>
+            <Route path='/editproducts' element={<EditProducts url={URL} addToCart={addToCart}/>}/>
           </Routes>
         </div>
 
