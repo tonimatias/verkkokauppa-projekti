@@ -48,8 +48,8 @@ export default function ManageCategories({url}) {
                         <label>Kategorian nimi</label>
                         <input type="text" value={newCategory} onChange={(e) => setNewCategory(e.target.value)}/>
                     </div>
-                    <button type="button" onClick={() => setAddingCategory(false)}>Peruuta</button>
-                    <button type="submit">Tallenna</button>
+                    <button className="btn btn-dark" type="button" onClick={() => setAddingCategory(false)}>Peruuta</button>
+                    <button className="btn btn-dark" type="submit">Tallenna</button>
                  </form>
             </>
         )

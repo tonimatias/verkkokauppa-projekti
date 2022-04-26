@@ -100,8 +100,8 @@ export default function ManageProducts({url}) {
                         <label>Kuvaus</label>
                         <input type="text" value={productDescription} onChange={(e) => setProductDescription(e.target.value)}/>
                     </div>
-                    <button type="button" onClick={() => setAddingProduct(false)}>Peruuta</button>
-                    <button type="submit">Tallenna</button>
+                    <button className="btn btn-dark" type="button" onClick={() => setAddingProduct(false)}>Peruuta</button>
+                    <button className="btn btn-dark" type="submit">Tallenna</button>
                 </form>
             </div>
         )
