@@ -63,6 +63,7 @@ function App() {
           <Routes>
             <Route path='/' element={<Home url={URL} addToCart={addToCart}/>}/>
             <Route path='/products/:categoryId' element={<Products url={URL} addToCart={addToCart}/>}/>
+            <Route path='/search/:searchPhrase' element={<Products url={URL}/>}/>
             <Route path='/order' element={<Order cart={cart} removeFromCart={removeFromCart} updateAmount={updateAmount} empty={emptyCart}url={URL}/>}/>
             <Route path='/managecategories' element={<ManageCategories url={URL} addToCart={addToCart}/>}/>
             <Route path='/manageproducts' element={<ManageProducts url={URL} addToCart={addToCart}/>}/>

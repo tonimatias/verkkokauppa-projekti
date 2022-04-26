@@ -101,6 +101,7 @@ h1{
 #shoppingCart {
   padding: 10px;
   padding-top: 18px;
+  list-style-type: none;
 }
 
 #cartLabel {

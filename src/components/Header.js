@@ -1,11 +1,12 @@
 import React, { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import Cart from './Cart'
 
 
 export default function Header({ url, cart }) {
   const [categories, setCategories] = useState([]);
+  const [search, setSearch] = useState('');
 
   useEffect(() => {
     axios.get(url + 'products/getcategories.php/')
@@ -16,6 +17,15 @@ export default function Header({ url, cart }) {
         alert(error.response === undefined ? error : error.response.data.error)
       })
   }, [])
+
+  const navigate = useNavigate();
+
+  function executeSearch(e){
+    if (e.charCode === 13) {
+      e.preventDefault();
+      navigate('/search/' + search);
+    }
+  }
 
   return (
     <nav className="navbar navbar-expand-lg navbar-dark">
@@ -50,7 +60,17 @@ export default function Header({ url, cart }) {
               <Link className="nav-link" to="/editproducts"style={{color:'white'}}>Tuotteiden muokkaus</Link>
             </li>
           </ul>
-
+            <form className='form-inline my-2 my-lg-0'>
+              <input 
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              onKeyPress={(e) => executeSearch(e)}
+              className="form-control mr-sm-2"
+              type="search"
+              placeholder='Etsi tuotteita'
+              aria-label='Search'
+              />
+            </form>
           <ul className='navba-nav ml-auto' id='shoppingCart'>
             <li className='nav-item'>
             <label id="cartLabel">Ostoskori:</label>
