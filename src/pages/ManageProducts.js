@@ -54,7 +54,7 @@ export default function ManageProducts({url}) {
     if (!addingProduct) {
         return (
             <div id='manage'>
-                <h3>Manage products</h3>
+                <h3 className='heading'>Tuotteiden ylläpito</h3>
                 <CategoryList
                     url={url}
                     selectedCategory={selectedCategory}
@@ -63,10 +63,9 @@ export default function ManageProducts({url}) {
                 <table className='table'>
                     <thead>
                         <tr key={uuid()}>
-                            <th>Name</th>
-                            <th>Price</th>
-                            <th>Old Price</th>
-                            <th>Description</th>
+                            <th>Tuotteen nimi</th>
+                            <th>Hinta</th>
+                            <th className='desc'>Kuvaus</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -74,40 +73,35 @@ export default function ManageProducts({url}) {
                             <tr key={uuid()}>
                             <td>{product.name}</td>
                             <td>{product.price.toFixed(2)} €</td>
-                            <td>{product.old_price} €</td>
-                            <td>{product.description}</td>
+                            <td className='desc'>{product.description}</td>
                             </tr>
                         ))}
                     </tbody>
                 </table>
                 <div>
-                    <button className="btn btn-dark" type="button" onClick={() => setAddingProduct(true)}>Add</button>
+                    <button className="btn btn-dark" type="button" onClick={() => setAddingProduct(true)}>Lisää</button>
                 </div>
             </div>
         )
     } else {
         return (
             <div id='manageForm'>
-                <h3>Add new product</h3>
+                <h3>Lisää tuote</h3>
                 <form onSubmit={saveProduct}>
                     <div>
-                        <label>Product name</label>
+                        <label>Tuotteen nimi</label>
                         <input type="text" value={productName} onChange={(e) => setProductName(e.target.value)}/>
                     </div>
                     <div>
-                        <label>Product price</label>
+                        <label>Hinta</label>
                         <input type="text" value={price} onChange={(e) => setPrice(e.target.value)}/>
                     </div>
                     <div>
-                        <label>Old product price</label>
-                        <input type="text" value={oldPrice} onChange={(e) => setOldPrice(e.target.value)}/>
-                    </div>
-                    <div>
-                        <label>Product description</label>
+                        <label>Kuvaus</label>
                         <input type="text" value={productDescription} onChange={(e) => setProductDescription(e.target.value)}/>
                     </div>
-                    <button type="button" onClick={() => setAddingProduct(false)}>Cancel</button>
-                    <button type="submit">Save</button>
+                    <button className="btn btn-dark" type="button" onClick={() => setAddingProduct(false)}>Peruuta</button>
+                    <button className="btn btn-dark" type="submit">Tallenna</button>
                 </form>
             </div>
         )
