@@ -65,8 +65,7 @@ export default function ManageProducts({url}) {
                         <tr key={uuid()}>
                             <th>Tuotteen nimi</th>
                             <th>Hinta</th>
-                            <th>Vanha hinta</th>
-                            <th>Kuvaus</th>
+                            <th className='desc'>Kuvaus</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -74,8 +73,7 @@ export default function ManageProducts({url}) {
                             <tr key={uuid()}>
                             <td>{product.name}</td>
                             <td>{product.price.toFixed(2)} €</td>
-                            <td>{product.old_price} €</td>
-                            <td>{product.description}</td>
+                            <td className='desc'>{product.description}</td>
                             </tr>
                         ))}
                     </tbody>
@@ -97,10 +95,6 @@ export default function ManageProducts({url}) {
                     <div>
                         <label>Hinta</label>
                         <input type="text" value={price} onChange={(e) => setPrice(e.target.value)}/>
-                    </div>
-                    <div>
-                        <label>Vanha hinta</label>
-                        <input type="text" value={oldPrice} onChange={(e) => setOldPrice(e.target.value)}/>
                     </div>
                     <div>
                         <label>Kuvaus</label>

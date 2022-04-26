@@ -228,6 +228,10 @@ form button {
     align-content: space-around;
   }
 
+  .desc {
+    display: none;
+  }
+
   form {
     margin-bottom: 50px;
   }
