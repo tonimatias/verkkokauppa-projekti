@@ -87,23 +87,23 @@ export default function ManageProducts({url}) {
                 <h3 className='heading'>Muokkaa tuotteiden tietoja</h3>
                 <form onSubmit={saveProduct}>
                     <div>
-                        <label>Product name</label>
+                        <label>Tuotteen nimi</label>
                         <input type="text" value={productName} onChange={(e) => setProductName(e.target.value)}/>
                     </div>
                     <div>
-                        <label>Product price</label>
+                        <label>Hinta</label>
                         <input type="text" value={price} onChange={(e) => setPrice(e.target.value)}/>
                     </div>
                     <div>
-                        <label>Old product price</label>
+                        <label>Vanha hinta</label>
                         <input type="text" value={oldPrice} onChange={(e) => setOldPrice(e.target.value)}/>
                     </div>
                     <div>
-                        <label>Product description</label>
+                        <label>Kuvaus</label>
                         <input type="text" value={productDescription} onChange={(e) => setProductDescription(e.target.value)}/>
                     </div>
                     <div>
-                        <label>Product ID</label>
+                        <label>Tuotteen ID</label>
                         <input type="text" value={productId} onChange={(e) => setProductId(e.target.value)}/>
                     </div>
                     <button className="btn btn-dark" type="submit">Save</button>

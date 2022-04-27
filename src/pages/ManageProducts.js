@@ -8,7 +8,6 @@ export default function ManageProducts({url}) {
     const [selectedCategory, setSelectedCategory] = useState(null);
     const [products,setProducts] = useState ([]);
     const [addingProduct, setAddingProduct] = useState (false);
-    const [editProduct, setEditProduct] = useState (false);
     const [productName,setProductName] = useState('');
     const [price,setPrice] = useState('');
     const [oldPrice,setOldPrice] = useState('null');
@@ -65,15 +64,15 @@ export default function ManageProducts({url}) {
                         <tr key={uuid()}>
                             <th>Tuotteen nimi</th>
                             <th>Hinta</th>
-                            <th className='desc'>Kuvaus</th>
+                            <th>Kuvaus</th>
                         </tr>
                     </thead>
                     <tbody>
                         {products.map((product) => (
                             <tr key={uuid()}>
                             <td>{product.name}</td>
-                            <td>{product.price.toFixed(2)} €</td>
-                            <td className='desc'>{product.description}</td>
+                            <td>{product.price} €</td>
+                            <td>{product.description}</td>
                             </tr>
                         ))}
                     </tbody>
