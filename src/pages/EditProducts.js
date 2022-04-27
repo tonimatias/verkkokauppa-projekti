@@ -99,12 +99,12 @@ export default function ManageProducts({url}) {
                         <input type="text" value={oldPrice} onChange={(e) => setOldPrice(e.target.value)}/>
                     </div>
                     <div>
-                        <label>Kuvaus</label>
-                        <input type="text" value={productDescription} onChange={(e) => setProductDescription(e.target.value)}/>
+                    <label>Tuotteen ID</label>
+                        <input type="text" value={productId} onChange={(e) => setProductId(e.target.value)}/>
                     </div>
                     <div>
-                        <label>Tuotteen ID</label>
-                        <input type="text" value={productId} onChange={(e) => setProductId(e.target.value)}/>
+                        <label>Kuvaus</label>
+                        <input id='desc' type="text" value={productDescription} onChange={(e) => setProductDescription(e.target.value)}/>
                     </div>
                     <button className="btn btn-dark" type="submit">Save</button>
                 </form>

@@ -235,7 +235,10 @@ form button {
   color: grey;
 }
 
-
+#desc {
+  height: 80px;
+  width: 200px;
+}
 
 .icon-style {
   color: white !important;
