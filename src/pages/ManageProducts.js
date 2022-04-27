@@ -86,7 +86,7 @@ export default function ManageProducts({url}) {
     } else {
         return (
             <div id='manageForm'>
-                <h3>Lisää tuote</h3>
+                <h3 className='heading'>Lisää tuote</h3>
                 <form onSubmit={saveProduct}>
                     <div>
                         <label>Tuotteen nimi</label>

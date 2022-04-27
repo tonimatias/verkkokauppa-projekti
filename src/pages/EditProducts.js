@@ -55,7 +55,7 @@ export default function ManageProducts({url}) {
 
     return (
         <div id='manage'>
-            <h3>Manage products</h3>
+            <h3 className='heading'>Lista tuotteista</h3>
             <CategoryList
                 url={url}
                 selectedCategory={selectedCategory}
@@ -84,7 +84,7 @@ export default function ManageProducts({url}) {
                 </tbody>
             </table>
             <div id='manageForm'>
-                <h3>Edit existing products</h3>
+                <h3 className='heading'>Muokkaa tuotteiden tietoja</h3>
                 <form onSubmit={saveProduct}>
                     <div>
                         <label>Product name</label>
@@ -106,7 +106,7 @@ export default function ManageProducts({url}) {
                         <label>Product ID</label>
                         <input type="text" value={productId} onChange={(e) => setProductId(e.target.value)}/>
                     </div>
-                    <button type="submit">Save</button>
+                    <button className="btn btn-dark" type="submit">Save</button>
                 </form>
             </div>
         </div>

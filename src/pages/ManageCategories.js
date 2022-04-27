@@ -28,7 +28,7 @@ export default function ManageCategories({url}) {
         return (
             <>
                 <h3 className='heading'>Kategorioiden ylläpito</h3>
-                <div>
+                <div id="manage">
                     <label>Kategoria</label>
                     <CategoryList
                         url={url}
@@ -42,14 +42,16 @@ export default function ManageCategories({url}) {
     } else {
         return (
             <>
-                <h3>Lisää kategoria</h3>
+                <h3 className='heading'>Lisää kategoria</h3>
                 <form onSubmit={saveCategory}>
-                    <div>
-                        <label>Kategorian nimi</label>
-                        <input type="text" value={newCategory} onChange={(e) => setNewCategory(e.target.value)}/>
+                    <div id='manageForm'>
+                        <div>
+                            <label>Kategorian nimi</label>
+                            <input type="text" value={newCategory} onChange={(e) => setNewCategory(e.target.value)}/>
+                        </div>
+                        <button className="btn btn-dark" type="button" onClick={() => setAddingCategory(false)}>Peruuta</button>
+                        <button className="btn btn-dark" type="submit">Tallenna</button>
                     </div>
-                    <button className="btn btn-dark" type="button" onClick={() => setAddingCategory(false)}>Peruuta</button>
-                    <button className="btn btn-dark" type="submit">Tallenna</button>
                  </form>
             </>
         )
