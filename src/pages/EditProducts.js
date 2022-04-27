@@ -67,7 +67,7 @@ export default function ManageProducts({url}) {
                         <th>Tuotteen nimi</th>
                         <th>Hinta</th>
                         <th>Vanha hinta</th>
-                        <th>Kuvaus</th>
+                        <th className='desc'>Kuvaus</th>
                         <th>Tuotteen ID</th>
                     </tr>
                 </thead>
@@ -77,7 +77,7 @@ export default function ManageProducts({url}) {
                         <td>{product.name}</td>
                         <td>{product.price} €</td>
                         <td>{product.old_price} €</td>
-                        <td>{product.description}</td>
+                        <td className='desc'>{product.description}</td>
                         <td>{product.id}</td>
                         </tr>
                     ))}
