@@ -64,11 +64,11 @@ export default function ManageProducts({url}) {
             <table className='table'>
                 <thead>
                     <tr key={uuid()}>
-                        <th>Name</th>
-                        <th>Price</th>
-                        <th>Old Price</th>
-                        <th>Description</th>
-                        <th>Product ID</th>
+                        <th>Tuotteen nimi</th>
+                        <th>Hinta</th>
+                        <th>Vanha hinta</th>
+                        <th>Kuvaus</th>
+                        <th>Tuotteen ID</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -106,7 +106,7 @@ export default function ManageProducts({url}) {
                         <label>Kuvaus</label>
                         <input id='desc' type="text" value={productDescription} onChange={(e) => setProductDescription(e.target.value)}/>
                     </div>
-                    <button className="btn btn-dark" type="submit">Save</button>
+                    <button className="btn btn-dark" type="submit">Tallenna</button>
                 </form>
             </div>
         </div>
