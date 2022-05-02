@@ -3,7 +3,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
-import Yllapito from './pages/Yllapito';
 import ManageCategories from './pages/ManageCategories'
 import ManageProducts from './pages/ManageProducts'
 import EditProducts from './pages/EditProducts'
@@ -55,7 +54,6 @@ function App() {
     localStorage.removeItem('cart');
   }
 
-
   return (
     <div id='body'>
       < Header url={URL} cart={cart}/>
@@ -70,9 +68,7 @@ function App() {
             <Route path='/editproducts' element={<EditProducts url={URL} addToCart={addToCart}/>}/>
           </Routes>
         </div>
-
       <Footer />
-
     </div>
   );
 }
